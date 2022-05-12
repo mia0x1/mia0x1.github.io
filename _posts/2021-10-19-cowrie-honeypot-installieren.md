@@ -1,6 +1,5 @@
 ---
 title: Einen Honeypot mit cowrie installieren
-categories: [opensource,linux,security]
 description: cowrie ist ein open source Honeypot für SSH und Telnet, mit welchem sich Interaktionen von Angreifer:innen loggen und auswerten lassen.
 tags:
  - opensource
