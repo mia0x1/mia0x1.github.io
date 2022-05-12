@@ -80,6 +80,8 @@ footer:
       url: "https://twitter.com/jln0x1"
     - label: "Impressum"
       url: "https://mialikescoffee.com/impressum"
+    - label: "Datenschutz"
+      url: "https://mialikescoffee.com/datenschutz"
    
 
 defaults:
