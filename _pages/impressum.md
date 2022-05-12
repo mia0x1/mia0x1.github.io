@@ -1,8 +1,8 @@
-
 ---
-title: "Impressum"
-sitemap: false
+layout: page
+title: Impressum
 permalink: /impressum/
+sitemap: false
 ---
 
 Julian Schmidt, Hannover
