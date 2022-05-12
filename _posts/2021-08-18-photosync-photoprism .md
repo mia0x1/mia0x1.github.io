@@ -1,6 +1,5 @@
 ---
 title: Mit PhotoSync und PhotoPrism Fotos synchronisieren und organisieren
-categories: [opensource, selfhosting]
 description: Fotos müssen nicht unbedingt in die Cloud synchronisiert werden. Wer eine Möglichkeit zum selberhosten sucht ist mit PhotoPrism bestens bedient. Dank PhotoSync werden Fotos vom Smartphone automatisch synchronisiert.
 tags:
  - opensource
