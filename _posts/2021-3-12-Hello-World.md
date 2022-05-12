@@ -1,6 +1,6 @@
 ---
 title: Hello World - Willkommen auf meinem Blog!
-Tags:
+tags:
   - Test
   - Test3
 ---
