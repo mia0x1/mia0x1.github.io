@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: mialikescoffee.com
 email: mail@mialikescoffee.com
 description: >- # this means to ignore newlines until "baseurl:"
   Ein Blog über IT, Security und Privacy. Powered by coffee.
@@ -57,24 +57,22 @@ plugins:
 author:
   name   : "Julian"
   avatar : "/assets/images/biopic.png"
-  bio    : "Immer daran interessiert Neues zu lernen. Schreiben hilift mir dabei Gelerntes zu verarbeiten und mein Wissen mit anderen zu teilen."
+  bio    : "Willkommen auf meinem Blog. Hier schreibe ich über Security, Privacy, CTFs (capture the flag) und andere IT-Themen."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://mialikescoffee.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://twitter.com/jln0x1"
+  
    
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/jln0x1"
    
 
 defaults:
