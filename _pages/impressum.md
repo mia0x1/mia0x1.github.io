@@ -1,13 +1,13 @@
+
 ---
-layout: page
-title: Impressum
-permalink: /impressum/
+title: "Impressum
 sitemap: false
+permalink: /impressum/
 ---
 
 Julian Schmidt, Hannover
 
-Kontakt: blog[AT]mialikescoffee.com
+Kontakt: mail[AT]mialikescoffee.com
 
 ### Haftung für Inhalte
 
