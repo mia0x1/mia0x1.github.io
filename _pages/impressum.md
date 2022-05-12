@@ -1,6 +1,6 @@
 
 ---
-title: "Impressum
+title: "Impressum"
 sitemap: false
 permalink: /impressum/
 ---
