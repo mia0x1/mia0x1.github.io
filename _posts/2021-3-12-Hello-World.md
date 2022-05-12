@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Hello World - Willkommen auf meinem Blog!
 ---
 
