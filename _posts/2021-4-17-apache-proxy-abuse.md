@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ist mein Webserver vom Apache Proxy Abuse betroffen?
 description: Ein Apache Proxy Abuse liegt vor, wenn ein Apache Webserver von Angreifern als Proxy missbraucht wird. Ich habe mich gefragt, ob mein Server davon betroffen ist.
 ---
