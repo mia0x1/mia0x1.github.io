@@ -63,6 +63,16 @@ Diese Website wird auf Servern von Github Inc. [https://github.com](https://gith
 
 [https://docs.github.com/en/github/site-policy/github-privacy-statement](https://docs.github.com/en/github/site-policy/github-privacy-statement)
 
+Diese Seite nutzt ein sogenanntes “Content Delivery Network” (CDN) von jsDelivr.
+
+Ein CDN ist ein Dienst, mit dessen Hilfe Inhalte unseres Onlineangebotes, insbesondere große Mediendateien, wie Grafiken oder Skripte mit Hilfe regional verteilter und über das Internet verbundener Server, schneller ausgeliefert werden. Die Verarbeitung der Daten der Nutzer erfolgt alleine zu den vorgenannten Zwecken und der Aufrechterhaltung der Sicherheit und Funktionsfähigkeit des CDN.
+
+Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern des CDN aufnehmen. Hierdurch erlangt dieser Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde.
+
+Die Nutzung erfolgt auf Grundlage unserer berechtigten Interessen, d.h. Interesse an einer sicheren und effizienten Bereitstellung, Analyse sowie Optimierung unseres Onlineangebotes gem. Art. 6 Abs. 1 lit. f. DSGVO.
+
+Weitere Informationen finden Sie in der Datenschutzerklärung von jsDelivr: https://www.jsdelivr.com/privacy-policy-jsdelivr-net/
+
 ### Bereitstellung des Onlineangebotes und Webhosting
 
 Um unser Onlineangebot sicher und effizient bereitstellen zu können, nehmen wir die Leistungen von einem oder mehreren Webhosting-Anbietern in Anspruch, von deren Servern (bzw. von ihnen verwalteten Servern) das Onlineangebot abgerufen werden kann. Zu diesen Zwecken können wir Infrastruktur- und Plattformdienstleistungen, Rechenkapazität, Speicherplatz und Datenbankdienste sowie Sicherheitsleistungen und technische Wartungsleistungen in Anspruch nehmen.
