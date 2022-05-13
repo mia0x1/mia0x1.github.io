@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Nginx Proxy Manager installieren und konfigurieren
 description: Mit dem Nginx Proxy Manager lassen sich Reverse Proxies leicht verwalten. In diesem Arikel zeige ich, wie ihr das Tool installiert und konfiguriert.
 tags: 
