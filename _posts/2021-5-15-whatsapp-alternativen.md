@@ -1,5 +1,4 @@
 ---
-layout: post
 title: WhatsApp-Alternativen, die deine Daten schützen
 description: WhatsApp hat die Datenschutzbestimmungen geändert, mit unklaren Folgen. In diesem Post stelle ich zwei datenschutzfreundliche Alternativen vor.
 tags:
