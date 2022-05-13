@@ -1,5 +1,4 @@
 ---
-layout: post
 title: WireGuard VPN installieren und konfigurieren
 description: WireGuard ist eine Software vom Aufbau von virtual private networks (VPN). Dieser Artikel zeigt, wie man WireGuard installiert und konfiguriert.
 tags:
