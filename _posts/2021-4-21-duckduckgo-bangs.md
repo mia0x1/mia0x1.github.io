@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Websuchen mit DuckDuckGo !Bangs optimieren
 description: DuckDuckGo Bangs sind Shortcuts, mit denen ihr eure Suchanfragen zu anderen Webseiten umleiten könnt. Ein paar dieser praktischen Shortcuts stelle ich euch vor.
 tags: 
