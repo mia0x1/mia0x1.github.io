@@ -1,0 +1,13 @@
+Sitemap: https://mialikescoffee.com/sitemap.xml
+
+User-agent: *
+Disallow: /search/
+Disallow: /archive/
+Disallow: /datenschutz/
+Disallow: /impressum/
+Disallow: /categories/
+Disallow: /search
+Disallow: /archive
+Disallow: /datenschutz
+Disallow: /impressum
+Disallow: /tags
