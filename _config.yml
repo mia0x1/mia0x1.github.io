@@ -80,7 +80,7 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jln0x1"
     - label: "Email"
-      icon: "fa-solid fa-envelope"
+      icon: "fas fa-at"
       url: "mailto:mail@mialikescoffee.com"
       
       
