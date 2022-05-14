@@ -32,5 +32,5 @@ Der Blog wird mit [Jekyll](https://jekyllrb.com/) auf GitHub Pages gehostet. Das
 Ich freue mich, wenn ihr mir auf Twitter oder Mastodon folgt. Der Blog kann über einen Feedreader abonniert werden. Die URL für Feedreader lautet: https://mialikescoffee.com/feed.xml
 
 E-Mail: [mail@mialikescoffee.com](mailto:mail@mialikescoffee.com)  
-Twitter: [@julian0x1](https://twitter.com/jln0x1)   
+Twitter: [@jln0x1](https://twitter.com/jln0x1)   
 Mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)
