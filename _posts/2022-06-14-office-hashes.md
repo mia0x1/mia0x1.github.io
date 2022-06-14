@@ -1,6 +1,6 @@
 ---
 title: Hashes aus passwortgeschützten Microsoft Office Dateien extrahieren
-description: In diesem Artikel erkläre ich wie der Portscanner nmap offene Ports erkennt.
+description: Mit office2john.py lassen sich Passwort-Hashes aus passwortgeschützten Office-Dateien auslesen.
 tags:
  - security
 ---
@@ -16,7 +16,7 @@ John the Ripper enthält bereits das benötigte Skript, welches für das Extrahi
 {: refdef} 
 
 
-**/usr/share/john/office2john.py** ist der standardmäßige Pfad für das Skript. 
+**/usr/share/john/office2john.py** ist der standardmäßige Pfad für das Skript. Weiterhin gibt es das Skript als Download auf [GitHub](https://github.com/openwall/john/blob/bleeding-jumbo/run/office2john.py).
 In meinem Fall ging es um die Datei MS_Word_Document.docx. 
 Das Skript habe ich auf die passwortgeschützte .docx Datei angewendet und mir den Hash in die Datei hash.txt ausgeben lassen.
 
