@@ -3,9 +3,9 @@ permalink: /about/
 title: "About"
 ---
 
-Hi! Ich heiße Julian und betreibe diesen Blog als Hobbyprojekt in meiner Freizeit. 
+Hi. Ich heiße Julian und dies ist mein privater Blog, auf welchem ich über Themen schreibe, die ich spannend finde.
 
-Themen, die hier behandelt werden:
+Dazu gehören:
 
 * IT-Security
 * Privacy
@@ -15,9 +15,9 @@ Themen, die hier behandelt werden:
 
 ### Warum mialikescoffee.com ?
 
-Der Name bezieht sich auf die Rolle der **Mia Wallace** aus dem Tarantino Film Pulp Fiction aus dem Jahr 1994. 
+Der Name bezieht sich auf **Mia Wallace** aus dem Tarantino Film Pulp Fiction aus dem Jahr 1994. 
 
-Außerdem trinke ich gerne Kaffee (vor allem beim Schreiben) und beschäftige mich mit den verschiedensten Zubereitungsarten (derzeit am liebsten Filterkaffee aus dem Hario V60).
+Außerdem trinke ich gerne Kaffee (vor allem beim Schreiben von Artikeln und Recherchen) und beschäftige mich mit den verschiedensten Zubereitungsarten (derzeit am liebsten Filterkaffee aus dem Hario V60).
   
 ![Eine Tasse Kaffee, die neben einem Laptop steht.]({{ site.baseurl }}/images/coffeelaptop.jpg)  
   
@@ -26,6 +26,7 @@ Außerdem trinke ich gerne Kaffee (vor allem beim Schreiben) und beschäftige mi
 
 Der Blog wird mit [Jekyll](https://jekyllrb.com/) auf GitHub Pages gehostet. Das Theme ist [Minimal-Mistakes](https://mmistakes.github.io/minimal-mistakes/).
 
+Das Favicon stammt von [Flaticon](https://www.flaticon.com/free-icons/coffee).
 
 ## Kontakt
 
