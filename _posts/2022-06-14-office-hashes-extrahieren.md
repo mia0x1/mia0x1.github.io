@@ -1,5 +1,5 @@
 ---
-title: Hashes aus passwortgeschützten Microsoft Office Dateien extrahieren
+title: Hashes aus passwortgeschützten Microsoft Office-Dateien extrahieren
 description: Mit office2john.py lassen sich Passwort-Hashes aus passwortgeschützten Office-Dateien auslesen.
 tags:
  - security
