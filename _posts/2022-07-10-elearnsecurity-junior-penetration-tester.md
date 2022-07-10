@@ -5,14 +5,13 @@ tags:
  - security
 ---
 
-Ich habe letzte Woche die Zertifizierung zum eLearnSecurity Junior Penetration Tester (eJPT) erfolgreich abgeschlossen. Im deutschsprachigen Raum erscheint mir die Zertifizierung ziemlich unbekannt, da ich bei meiner Recherche sehr wenige deutschsprachigen Blogposts und Erfahrungsberichte zum eJPT gefunden habe. Daher dachte ich mir, dass ich den eJPT vorstelle.
+Ich habe letzte Woche die Zertifizierung zum eLearnSecurity Junior Penetration Tester (eJPT) erfolgreich abgeschlossen. Im deutschsprachigen Raum erscheint mir die Zertifizierung ziemlich unbekannt, da ich bei meiner Recherche sehr wenige deutschsprachige Blogposts und Erfahrungsberichte zum eJPT gefunden habe. Daher dachte ich mir, dass ich selber einen Post zum eJPT schreibe, um diese Lücke zu schließen.
 
-## Was ist eJPT?
+## Was ist der eJPT?
 
-eJPT ist eine praxisnahe Zertifizierung, in welcher die Grundlagen des Penetration Testings und grundsätzliches Wissen zu IT-Security vermittelt werden. Im Gegensatz zu vielen anderen Zertifizierungen, welche ausschließlich theoriebezogen sind und das erworbene Wissen mit Multiple-Choice-Fragen abrufen, bekommt man beim eJPT ein echtes Lab zur Verfügung gestellt, bei welchen man das erworbene Wissen einer praktischen Übung unter Beweis stellen muss. Dazu muss man mehrere Hosts enumerieren, Schwachstellen finden und 20 Fragen zu den Befunden beantworten.
-Vorbereitung
+eJPT ist eine praxisorientierte Security-Zertifizierung, in welcher die Grundlagen des Penetration Testings und grundsätzliches Wissen zu IT-Security vermittelt werden. Im Gegensatz zu vielen anderen Zertifizierungen, welche ausschließlich theoriebezogen sind und das erworbene Wissen mit Multiple-Choice-Fragen abrufen, bekommt man beim eJPT ein echtes Lab zur Verfügung gestellt, bei welchen man das erworbene Wissen in einer praktischen Übung unter Beweis stellen muss.
 
-Ein großer Pluspunkt beim eJPT ist, dass das Training komplett kostenlos ist. Lediglich für die Prüfung muss man ein Voucher für 200,- USD erwerben. Somit ist die Einstiegshürde sehr gering.
+Ein großer Pluspunkt ist, dass das Training komplett kostenlos ist. Lediglich für die Prüfung muss man ein Voucher für 200,- USD erwerben. Somit ist die Einstiegshürde sehr gering.
 
 Laut [eLearnSecurity](https://elearnsecurity.com/product/ejpt-certification/) erwirbt man Kenntnisse in den folgenden Bereichen:
 
@@ -35,9 +34,9 @@ Die Dokumentation ist euer Fundament, um die Prüfung ohne Probleme bestehen zu 
 
 ## Prüfung
 
-Die Prüfung besteht aus einem Blackbox-Test. Es gibt kein festes Ziel und keine direkten Vorgaben. Stattdessen habt ihr 72 Stunden Zeit, um das Netzwerk und alle Hosts zu enumerieren und Schwachstellen zu finden und auszunutzen. Die 20 Prüfungsfragen beziehen sich dann darauf. Je sorgfältiger ihr also vorgeht, desto leichter wird euch die Beantwortung der Fragen fallen. Hier liegt meiner Meinung nach auch der Charme vom eJPT.  Es geht nicht um das Wiederkäuen von Fakten, welche man auswendig gelernt hat, sondern um Anwendungswissen und tatsächlicher Praxis. Das macht erstens Spaß und ist zweitens pädagogisch viel sinnvoller, als stumpfes Abfragen von Auswendiggelerntem.
+Die Prüfung besteht aus einem Blackbox-Test. Es gibt kein festes Ziel und keine direkten Vorgaben. Stattdessen habt ihr 72 Stunden Zeit, um das Netzwerk und alle Hosts zu enumerieren und Schwachstellen zu finden und auszunutzen. Die 20 Prüfungsfragen beziehen sich dann darauf. Je sorgfältiger ihr also vorgeht, desto leichter wird euch die Beantwortung der Fragen fallen. Hier liegt meiner Meinung nach auch der Charme vom eJPT.  Es geht nicht um das Wiederkäuen von Fakten, welche man auswendig gelernt hat, sondern um Anwendungswissen und tatsächliche Praxis. Das macht erstens Spaß und ist zweitens pädagogisch wertvoller, als stumpfes Abfragen von Auswendiggelerntem.
 
-Abschließend ein paar Tipps:
+Abschließend ein paar Tipps zur Prüfung:
 
 * Haltet eure Dokumentation bereit und wendet diese an
 * Alles sorgfältig enumerieren
