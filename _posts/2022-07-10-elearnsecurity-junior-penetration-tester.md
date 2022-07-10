@@ -1,5 +1,5 @@
 ---
-title: eLearn Security Junior Penetration Tester
+title: eLearnSecurity Junior Penetration Tester
 description: eJPT ist eine praxisorientierte Entry-Level Zertifikat für Penetration Testing und offensive IT-Sicherheit.
 tags:
  - security
