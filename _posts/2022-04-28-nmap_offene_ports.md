@@ -4,7 +4,7 @@ description: In diesem Artikel erkläre ich wie der Portscanner nmap offene Port
 tags:
  - security
 header:
- image: /images/header_switch.png
+ image: /images/header_switch.jpg
  image_description: "Foto eines Switches von pexels.com."
 ---
 
