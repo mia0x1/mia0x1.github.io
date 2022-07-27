@@ -5,6 +5,10 @@ tags:
  - security
  - linux
  - ctf
+header:
+ image: /images/header_keyboard.jpg
+ image_description: "Foto einer Computertastatur."
+ caption: "Photo credit: [pexels.com](https://pexels.com)"
 ---
 
 Nachdem ich gerade erst einen writeup für TryHackMe rootme geschrieben habe, gibt es jetzt einen weiteren für [Internal](https://tryhackme.com/room/internal).
