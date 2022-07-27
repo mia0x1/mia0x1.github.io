@@ -5,8 +5,7 @@ tags:
  - security
 header:
  image: /images/header_switch.png
- image_description: "Ein Screenshot der Wallabag-Artikelliste."
- caption: "Photo credit:  [**Pexels**](https://www.pexels.com/de-de/foto/nahaufnahme-des-netzwerk-switches-2881227/)
+ image_description: "Foto eines Switches von pexels.com."
 ---
 
 nmap ist ein mächtiges Tool, welches vor allem für Host Discovery, OS Fingerprinting und als Portscanner zum Einsatz kommt. Ihr könnt nmap entweder in eurem eigenen Netzwerk einsetzen oder dort, wo ihr explizit die Erlaubnis erhalten habt, zum Beispiel um euer Firmennetzwerk zu auditieren oder weil ihr für einen Penetrationstest beauftragt wurdet.
