@@ -5,6 +5,9 @@ tags:
  - security
  - apple
  - privacy
+header:
+ image: /images/header_iphone.jpg
+ image_description: "Foto eines iPhones von pexels.com."
 ---
 
 Ein von mir schon länger erwartetes iOS-Feature ist der [Datenschutzbericht](https://support.apple.com/en-us/HT212958). Mit iOS 15.2 hat Apple den Bericht nun endlich ins Betriebssystem integriert. 
