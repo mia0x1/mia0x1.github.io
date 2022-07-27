@@ -128,4 +128,4 @@ Mit den erbeuteten Zugangsdaten loggen wir uns per SSH ein und finden direkt die
 ![Root Logindaten aus der note.txt.]({{ site.baseurl }}/images/rootflag_internal.png)
 {: refdef}
 
-Wenn ihr andere Lösungsansätze gefunden habt, oder Fragen zu dieser Capture the Flag Challenge habt, meldet euch gerne bei [Twitter](https://twitter.com/julian0x1).
+Wenn ihr andere Lösungsansätze gefunden habt, oder Fragen zu dieser Capture the Flag Challenge habt, meldet euch gerne bei [Twitter](https://twitter.com/jln0x1).
