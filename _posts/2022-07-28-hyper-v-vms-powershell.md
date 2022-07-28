@@ -1,5 +1,13 @@
 ---
-published: false
+published: true
+description: >-
+  Mit Powershell lassen sich virtuelle Maschinen für Hyper-V erstellen und
+  konfigurieren.
+tags:
+  - windows
+header:
+  image: /images/header_switch.jpg
+  image_description: Foto eines Switches von pexels.com.
 ---
 ## Virtuelle Maschinen in Hyper-V mit Powershell erstellen
 
@@ -29,4 +37,3 @@ In diesem Beispiel erstelle ich eine VM mit Ubuntu 20.04 LTS erstellen, auf welc
 
 
 {: .notice--info} New-VM -name "ubuntu2004" -MemoryStartupBytes 4GB -NewVHDPath "D:\Hyper-V\Virtual Hard Disks\hostname.vhdx" -Path "D:\Hyper-V\Virtual Machines" -NewVHDSizeBytes 100GB -Generation 2
-
