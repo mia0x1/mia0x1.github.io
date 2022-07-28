@@ -25,7 +25,7 @@ In diesem Beispiel erstelle ich eine VM mit Ubuntu 20.04 LTS erstellen, auf welc
 * -NewVHDPath: Pfad der virtuellen Festplatte auf dem Hyper-V Host
 * -Path: Pfad der VM auf dem Hyper-V Host
 * -NewVHDSizeBytes: Größe der VHD
-* -Generation: Generation 1 oder 2 der VM (Gen 2 unterstützt UEFI / Secure Boot)
+* -[Generation](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v): Generation 1 oder 2 der VM (Gen 2 unterstützt UEFI / Secure Boot)
 
 * AddVMDvdDrive: Fügt ein DVD-Laufwerk zu einer VM hinzu
 * -VMName: Name der VM, zu welcher das DVD-Laufwerk hinzugefügt werden soll
@@ -35,6 +35,28 @@ In diesem Beispiel erstelle ich eine VM mit Ubuntu 20.04 LTS erstellen, auf welc
 * -Count: Anzahl der CPUs
 
 
+Als erstes habe ich die VM mit der VHD erstellt.
+```
+New-VM -name "ubuntu2004" -MemoryStartupBytes 4GB -NewVHDPath "D:\Hyper-V\Virtual Hard Disks\Ubuntu.vhdx" -Path "D:\Hyper-V\Virtual Machines" -NewVHDSizeBytes 100GB -Generation 2
+```
 
-New-VM -name "ubuntu2004" -MemoryStartupBytes 4GB -NewVHDPath "D:\Hyper-V\Virtual Hard Disks\hostname.vhdx" -Path "D:\Hyper-V\Virtual Machines" -NewVHDSizeBytes 100GB -Generation 2
-{: .notice--info}
+Danach müssen die CPUs konfiguriert werden.
+
+```
+Set-VMProcessor ubuntu2004 -count 2
+```
+
+Bevor die VM gestartet werden kann, wird noch das DVD-Laufwerk mit der Ubuntu 20.04 ISO eingebunden.
+
+```
+Add-VMDvdDrive -VMName „hostname“ -Path D:\ISOs\Ubuntu2004.ISO
+```
+
+Schließlich lässt sich die neu erstellte VM mit **Start-VM ubuntu2004** starten.
+Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter.
+
+
+
+
+
+
