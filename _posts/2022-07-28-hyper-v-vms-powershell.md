@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 description: >-
   Mit Powershell lassen sich virtuelle Maschinen für Hyper-V erstellen und
   konfigurieren.
