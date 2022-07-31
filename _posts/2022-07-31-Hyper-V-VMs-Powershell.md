@@ -58,6 +58,10 @@ Add-VMDvdDrive -VMName ws2022 -Path D:\ISOs\Ubuntu2004.ISO
 Die neu erstelle VM lässt sich nun mit dem cmdlet **Start-VM ws2022** starten.
 Ich fand es jedoch sinnvoller die VM über die GUI des Hyper-V Managers zu starten. Hier hat man am Anfang des Bootvorgangs nur wenige Sekunden Zeit, um das Booten über das eingebundene ISO-Image zu bestätigen.
 
+![vm-boot.png]({{site.baseurl}}/images/vm-boot.png)
 
+Anschließend startet der Installationsprozess für Windows Server 2022.
+
+![ws2022-setup.png]({{site.baseurl}}/images/ws2022-setup.png)
 
 Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter.
