@@ -9,7 +9,7 @@ header:
   image: /images/header_switch.jpg
   image_description: Foto eines Switches von pexels.com.
 ---
-Der reguläre Weg Hyper-V VMs ist wohl über die GUI im Hyper-V Manager. In diesem Beitrag zeige ich, wie man virtuelle Maschinen mit Hilfe von Powershell erstellen kann.
+Der herkömmliche Weg Hyper-V VMs zu installieren ist wohl mittels der GUI im Hyper-V Manager. In diesem Beitrag zeige ich, wie man virtuelle Maschinen in Hyper-V mithilfe von Powershell erstellen kann.
 
 In modernen Windows-Umgebungen lässt Microsoft einem die Wahl Aufgaben entweder über die GUI oder mit Powershell durchzuführen. Ich habe die Erfahrung gemacht, dass Powershell oft die effizientere und bessere Methode ist. Mit Skripts und Templates lassen sich wiederkehrende Aufgaben automatisieren und man kann die dadurch eingesparte Zeit in wichtigere Projekte investieren.
 
@@ -33,7 +33,7 @@ In diesem Beispiel erstelle ich eine VM mit Windows Server 2022. Dem Server werd
 * -Count: Anzahl der CPUs
 
 
-Zuerst muss Powershell als Administrator ausgefüht werden. Nun lässt sich mit dem New-VM cmdlet eine neue virtuelle Maschine erstellen.
+Zuerst muss Powershell als Administrator ausgeführt werden. Nun lässt sich mit dem New-VM cmdlet eine neue virtuelle Maschine erstellen.
 ```
 New-VM -name "ws2022" -MemoryStartupBytes 4GB -NewVHDPath "C:\Hyper-V\Virtual Hard Disks\ws2022.vhdx" -Path "C:\Hyper-V\Virtual Machines\" -NewVHDSizeBytes 100GB -Generation 2
 ```
@@ -55,7 +55,7 @@ Bevor die VM gestartet werden kann, wird noch das DVD-Laufwerk mit dem ISO-Image
 Add-VMDvdDrive -VMName ws2022 -Path D:\ISOs\Ubuntu2004.ISO
 ```
 
-Die neu erstelle VM lässt sich nun mit dem cmdlet **Start-VM ws2022** starten.
+Die neu erstelle VM lässt sich jetzt mit dem cmdlet **Start-VM ws2022** starten.
 Ich fand es jedoch sinnvoller die VM über die GUI des Hyper-V Managers zu starten. Hier hat man am Anfang des Bootvorgangs nur wenige Sekunden Zeit, um das Booten über das eingebundene ISO-Image zu bestätigen.
 
 ![vm-boot.png]({{site.baseurl}}/images/vm-boot.png)
@@ -64,4 +64,4 @@ Anschließend startet der Installationsprozess für Windows Server 2022.
 
 ![ws2022-setup.png]({{site.baseurl}}/images/ws2022-setup.png)
 
-Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter.
+Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter oder Mastodon.
