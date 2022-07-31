@@ -8,6 +8,7 @@ tags:
 header:
   image: /images/header_switch.jpg
   image_description: Foto eines Switches von pexels.com.
+title: Virtuelle Maschinen in Hyper-V mit Powershell erstellen
 ---
 Der herkömmliche Weg Hyper-V VMs zu installieren ist wohl mittels der GUI im Hyper-V Manager. In diesem Beitrag zeige ich, wie man virtuelle Maschinen in Hyper-V mithilfe von Powershell erstellen kann.
 
