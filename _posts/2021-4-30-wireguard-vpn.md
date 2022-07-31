@@ -5,6 +5,10 @@ tags:
  - opensource
  - selfhosting
  - linux
+header:
+  image: /images/header/header_tunnel.jpg
+  image_description: Foto eines Tunnels auf einer Straße.
+  caption: "Photo credit: [pexels.com](https://www.pexels.com/de-de/@katelin-post-255918/)"
 ---
 
 [WireGuard](https://www.wireguard.com/) ist eine freie Software, mit welcher sich VPNs (Virtual Private Networks) erstellen lassen. Diese erfreut sich seit einiger Zeit einer großen Beliebtheit, was nicht zuletzt daran liegt, dass WireGuard mittlerweile fester Bestandteil des Linux Kernels ist. In diesem Artikel zeige ich, wie man mit dem WireGuard VPN eine sichere Verbindung von seinem Computer oder Smartphone zu einem Ubuntu Server aufbaut. Ihr könnt Wireguard verwenden, um von unterwegs auf eure Heim- oder Firmennetz zuzugreifen.
