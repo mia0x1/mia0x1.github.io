@@ -4,6 +4,10 @@ description: Fotos müssen nicht unbedingt in die Cloud synchronisiert werden. W
 tags:
  - opensource
  - selfhosting
+header:
+  image: /images/header/header_fotografie.jpg
+  image_description: Foto einer Person in roter Jacke, welche die Landschaft fotografiert.
+  caption: "Photo credit: [pexels.com](https://www.pexels.com/de-de/@sam-forson-42814/)"
 ---
 
 Apple macht es einem besonders leicht seine Devices in die Services des Ökosystems zu integrieren. Der goldene Käfig funktioniert zwar ausgesprochen gut, ein fader Beigeschmack kann dennoch bleiben. Abhängigkeit von und Kontrolle durch Apple und Verlust der Datenhoheit können die Kehrseite der Medaille sein. Dazu kommt die aktuelle [Kritik](https://www.heise.de/news/iPhone-soll-Fotos-ueberwachen-90-Organisationen-rufen-Apple-zu-Kehrtwende-auf-6169832.html) an den Überwachungsplänen des Konzerns, welcher sich sonst eher als Schützer der Privatsphäre vermarktet. Auf der Suche nach Alternativen zu iCloud-Fotos bin ich über [PhotoSync](https://www.photosync-app.com) und [PhotoPrism](https://photoprism.app/) gestolpert, welche mir auch auf Twitter und Mastodon empfohlen wurden.
