@@ -27,6 +27,7 @@ Außerdem trinke ich gerne Kaffee (vor allem beim Schreiben von Artikeln und Rec
 Der Blog wird mit [Jekyll](https://jekyllrb.com/) auf GitHub Pages gehostet. Das Theme ist [Minimal-Mistakes](https://mmistakes.github.io/minimal-mistakes/).
 
 Das Favicon stammt von [Flaticon](https://www.flaticon.com/free-icons/coffee).
+Das Terminal-Logo im Header stammt ebenfalls von [Flaticon](https://www.flaticon.com/free-icon/terminal_7544562).
 
 ## Kontakt
 
