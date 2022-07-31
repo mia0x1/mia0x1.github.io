@@ -30,6 +30,7 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Berlin
 locale: de_DE
+logo: "/images/logo_terminal.png"
 
 include:
   - _pages
