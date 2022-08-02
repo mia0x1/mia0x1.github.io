@@ -1,5 +1,14 @@
 ---
 published: false
+description: >-
+  Mit Fine-Grained Password Policies lassen sich granulare Passwortrichtlinien
+  für unterschiedliche Nutzer:innengruppen in Windows-Domänen verwalten.
+tags:
+  - windows
+header:
+  image: /images/header/header_windows.jpg
+  image_description: Fotografie eines Wohnhauses aus einem Fenster heraus.
+  caption: 'Photo credit: [pexels.com](https://pexels.com)'
 ---
 
 Vor kurzem war ich als Teilnehmer auf einem heise Security Workshop, in dem es um die Absicherung von Windows Domänen mit einem Active Directory ging. Dort wurde ein praktisches Tool zur Passwortsicherheit vorgestellt, welches überraschenderweise keiner der Teilnehmer:innen so wirklich kannte.
