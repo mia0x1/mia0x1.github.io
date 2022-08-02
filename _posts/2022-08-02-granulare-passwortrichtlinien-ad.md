@@ -30,7 +30,7 @@ Im Active Directory-Verwaltungscenter gibt es den Container System, in dem sich 
 
 Im Password Settings Container klickt man auf der rechten Fensterseite auf neu, um eine Passwortrichtlinie zu erstellen.
 
-{% include figure image_path="/images/fgpp2.png" alt="Screenshot der FGPP-Einstellungen" caption="Die Kennworteinstellungen bieten Optionen zur Komplexität des Passworts und zu Kontosperrungsrichtlinien." %}
+{% include figure image_path="/images/fgpp3.png" alt="Screenshot der FGPP-Einstellungen" caption="Die Kennworteinstellungen bieten Optionen zur Komplexität des Passworts und zu Kontosperrungsrichtlinien." %}
 
 - Zur Besserung Übersicht gebe ich der Richtlinie den Namen entsprechend der Sicherheitsgruppe, auf welche sie angewendet wird.
 
@@ -44,4 +44,4 @@ Im Password Settings Container klickt man auf der rechten Fensterseite auf neu, 
 
 - **Direkt anwendbar auf**: Hier wird die Sicherheitsgruppe festgelegt, für welche die Richtlinie gelten soll
 
-Best Practices für Passwörter werden in diesem Artikel vorgestellt. War mein Artikel hilfreich oder habt ihr Fragen oder Anregungen dazu, schreib mir gerne bei [Twitter](https://twitter.com/jln0x1) oder eine E-Mail.
+Best Practices für Passwörter werden in [diesem Artikel](https://www.netwrix.com/password_best_practice.html) vorgestellt. War mein Artikel hilfreich oder habt ihr Fragen oder Anregungen dazu, schreib mir gerne bei [Twitter](https://twitter.com/jln0x1) oder eine E-Mail.
