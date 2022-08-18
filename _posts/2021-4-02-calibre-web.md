@@ -5,6 +5,10 @@ tags:
  - opensource
  - selfhosting
  - linux
+header:
+ image: /images/header/header_library.jpg
+ image_description: "Foto eines Bücherregals."
+ caption: "Photo credit: [pexels.com](https://www.pexels.com/de-de/@element5/)"
 ---
 
 Calibre-web ist eine ansehnliche web-basierte App, mit denen ihr eure E-Book Sammlung verwalten könnt. Ihr könnt damit durch eure Bücher stöbern, diese direkt über den Browser lesen oder auf eines eurer Geräte herunterladen. Für den Download bieten sich natürlich insbesondere E-Bookreader oder Tablets an.
