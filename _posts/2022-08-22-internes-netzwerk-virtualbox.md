@@ -34,7 +34,7 @@ vboxmanage dhcpserver add --network cyberlab --server-ip 10.0.0.1 --netmask 255.
 * upper-ip: Die höchste IP-Adresse, die vom DHCP-Server vergeben wird
 * enable: DHCP-Server und internes Netzwerk aktivieren
 
-Die virtuellen Maschinen müssen mit dem internen Netzwerk verbunden werden. Dazu öffnet man die Einstellungen der VM und wählt im Bereich Netzwerk "Angeschlossen an: Internes Netzwerk" und trägt darunter den Namne "Cyberlab" ein. Dies habe ich für meine Kali Linux VM und eine Vulnhub-VM ausgeführt.
+Die virtuellen Maschinen müssen mit dem internen Netzwerk verbunden werden. Dazu öffnet man die Einstellungen der VM und wählt im Bereich Netzwerk "Angeschlossen an: Internes Netzwerk" und trägt darunter den Namen "cyberlab" ein. Dies habe ich für meine Kali Linux VM und die Vulnhub-VM ausgeführt.
 
 ![Konfiguration der Netzwerkeinstellungen der VM]({{site.baseurl}}/images/virtualbox_netzwerk.png)
 
