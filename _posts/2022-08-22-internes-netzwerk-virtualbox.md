@@ -4,7 +4,9 @@ description: >-
   Mit einem internen Netzwerk lassen sich in VirtualBox virtuelle Maschinen vom
   Internet und vom Host isolieren.
 tags:
-  - 'windows,security'
+  - windows
+  - security
+  - linux
 header:
   image: /images/header/header_network.jpg
   image_description: Foto eines Switches
