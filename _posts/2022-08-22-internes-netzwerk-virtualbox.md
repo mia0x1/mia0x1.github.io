@@ -10,9 +10,9 @@ header:
   image_description: Fotografie eines Wohnhauses aus einem Fenster heraus.
   caption: 'Photo credit: [pexels.com](https://pexels.com)'
 ---
-Ein internes Netzwerk in VirtualBox ist ein Netzwerkmodus, in dem virtuelle Maschinen, welche Teil des internen Netzwerks sind, untereinander kommunizieren können, aber keine Kommunikation über die Grenzen des internen Netzwerks hinaus möglich ist.
+Ein internes Netzwerk in VirtualBox ist ein Netzwerkmodus, in dem virtuelle Maschinen untereinander kommunizieren können, aber keine Kommunikation über die Grenzen des internen Netzwerks hinaus möglich ist.
 
-Die Notwendigkeit ein virtuelles Netzwerk zu erstellen ergab sich bei mir, als ich ein Security-Lab mit Vulnhub-Maschinen aufgebaut habe. https://www.vulnhub.com/ stellt virtuelle Maschinen zur Verfügung, welche absichtlich Konfigurationsfehler und Sicherheitslücken enthalten. Die Sicherheitslücken stellen ein Risiko für die Netzwerksicherheit dar. Daher habe ich das Lab in einem internen Netzwerk isoliert.
+Die Notwendigkeit ein virtuelles Netzwerk zu erstellen ergab sich bei mir, als ich ein Security-Lab mit VulnHub-Maschinen aufgebaut habe. [VulnHub](https://www.vulnhub.com/) stellt virtuelle Maschinen zur Verfügung, welche absichtlich Konfigurationsfehler und Sicherheitslücken enthalten. Die Sicherheitslücken stellen ein Risiko für die Netzwerksicherheit dar. Daher habe ich das Lab in einem internen Netzwerk isoliert.
 
 ## Internes Netzwerk konfigurieren
 
