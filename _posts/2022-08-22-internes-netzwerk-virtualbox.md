@@ -2,23 +2,26 @@
 published: false
 description: >-
   Mit einem internen Netzwerk lassen sich in VirtualBox virtuelle Maschinen vom
-  Internet und     vom Host isolieren.
+  Internet und vom Host isolieren.
 tags:
   - 'windows,security'
 header:
-  image: /images/header/header_windows.jpg
-  image_description: Fotografie eines Wohnhauses aus einem Fenster heraus.
-  caption: 'Photo credit: [pexels.com](https://pexels.com)'
+  image: /images/header/header_network.jpg
+  image_description: Foto eines Switches
+  caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/@pixabay/)'
+title: Interne Netzwerke in VirtualBox erstellen
 ---
 Ein internes Netzwerk in VirtualBox ist ein Netzwerkmodus, in dem virtuelle Maschinen untereinander kommunizieren können, aber keine Kommunikation über die Grenzen des internen Netzwerks hinaus möglich ist.
 
-Die Notwendigkeit ein virtuelles Netzwerk zu erstellen ergab sich bei mir, als ich ein Security-Lab mit VulnHub-Maschinen aufgebaut habe. [VulnHub](https://www.vulnhub.com/) stellt virtuelle Maschinen zur Verfügung, welche absichtlich Konfigurationsfehler und Sicherheitslücken enthalten. Die Sicherheitslücken stellen ein Risiko für die Netzwerksicherheit dar. Daher habe ich das Lab in einem internen Netzwerk isoliert.
+Die Notwendigkeit ein virtuelles Netzwerk zu erstellen ergab sich bei mir, als ich ein Security-Lab mit VulnHub-Maschinen aufgebaut habe. [VulnHub](https://www.vulnhub.com/) stellt virtuelle Maschinen zur Verfügung, welche absichtlich Konfigurationsfehler und Sicherheitslücken enthalten. Die Sicherheitslücken stellen ein Risiko für die Netzwerksicherheit dar. Daher habe ich das Lab in einem internen Netzwerk isoliert. Für das Lab habe ich zwei virtuelle Maschinen dem interne Netzwerk hinzugefügt. Eine VM mit Kali Linux und eine VM, welche ich von VulnHub heruntergeladen habe.
 
 ## Internes Netzwerk konfigurieren
 
 In VirtualBox muss man zunächst einen DHCP-Server erstellen. Dazu nutzt man das Tool vboxmanage, welches sich im Installationsverzeichnis von VirtualBox befindet.
 
+```
 vboxmanage dhcpserver add --network cyberlab --server-ip 10.0.0.1 --netmask 255.255.255.0 --lower-ip 10.0.0.2 --upper-ip 10.0.0.10 --enable
+```
 
 ![Erstellung des DHCP-Servers mit vboxmanage]({{site.baseurl}}/images/vboxmanage.png)
 
