@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 description: >-
   Mit einem internen Netzwerk lassen sich in VirtualBox virtuelle Maschinen vom
   Internet und vom Host isolieren.
