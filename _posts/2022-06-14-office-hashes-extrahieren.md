@@ -1,12 +1,16 @@
 ---
 title: Hashes aus passwortgeschützten Microsoft Office-Dateien extrahieren
-description: Mit office2john.py lassen sich Passwort-Hashes aus passwortgeschützten Office-Dateien auslesen.
+description: >-
+  Mit office2john.py lassen sich Passwort-Hashes aus passwortgeschützten
+  Office-Dateien auslesen.
 tags:
- - security
+  - security
 header:
- image: /images/header/header_office.jpg
- image_description: "Foto eines Schreibtischs mit Computer."
- caption: "Photo credit: [pexels.com](https://pexels.com)"
+  image: /images/header/header_office.jpg
+  teaser: /images/header/header_office.jpg
+  image_description: Foto eines Schreibtischs mit Computer.
+  caption: 'Photo credit: [pexels.com](https://pexels.com)'
+published: true
 ---
 
 Bei der Vorbereitung für die Zertifizierung [eLearnSecurity Junior Penetration Tester](https://elearnsecurity.com/product/ejpt-certification/) bin ich über ein Aufgabe gestolpert, bei welcher man das Passwort eines passwortgeschützten Microsoft Word-Dokuments cracken sollte. Um dies effizient mit einem Tool wie John the Ripper oder Hashcat durchzuführen, muss zunächst der Hash des Passworts aus der Word-Datei extrahiert werden, welcher sich dann an ein Tool der Wahl übergeben lässt. Die hier genannten Tools sollten nur für Trainingszwecke an eigenen Dateien oder mit ausdrücklicher Erlaubnis, z.B. im Rahmen eines Penetrationtests, eingesetzt werden.
@@ -32,7 +36,4 @@ Die hash.txt enthält dann den extrahierten Hash, welcher sich anschließend mit
 
 {:refdef: style="text-align: center;"}
 ![Der hash ist nun in der Datei hash.txt gespeichert)]({{ site.baseurl }}/images/hash.png)
-{: refdef} 
-
-
-
+{: refdef}
