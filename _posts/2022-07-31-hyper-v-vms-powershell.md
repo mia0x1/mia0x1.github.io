@@ -8,7 +8,7 @@ tags:
 header:
   image: /images/header/header_windows.jpg
   image_description: Fotografie eines Wohnhauses aus einem Fenster heraus.
-  caption: "Photo credit: [pexels.com](https://pexels.com)"
+  caption: 'Photo credit: [pexels.com](https://pexels.com)'
 title: Virtuelle Maschinen in Hyper-V mit Powershell erstellen
 ---
 Der herkömmliche Weg Hyper-V VMs zu installieren ist wohl mittels der GUI im Hyper-V Manager. In diesem Beitrag zeige ich, wie man virtuelle Maschinen in Hyper-V mithilfe von Powershell erstellen kann.
@@ -66,4 +66,4 @@ Anschließend startet der Installationsprozess für Windows Server 2022.
 
 ![ws2022-setup.png]({{site.baseurl}}/images/ws2022-setup.png)
 
-Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter oder Mastodon.
+Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter bzw. Mastodon.
