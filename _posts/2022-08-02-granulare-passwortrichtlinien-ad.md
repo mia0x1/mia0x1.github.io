@@ -7,6 +7,7 @@ tags:
   - windows
 header:
   image: /images/header/header_windows2.jpg
+  teaser: /images/header/header_windows2.jpg
   image_description: Fotografie eines Backsteinhauses mit großen Fenstern und Blumenkasten.
   caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/@mikebirdy/)'
 title: Granulare Passwortrichtlinien im Active Directory erstellen
