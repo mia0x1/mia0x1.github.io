@@ -7,6 +7,7 @@ tags:
   - windows
 header:
   image: /images/header/header_windows.jpg
+  teaser: /images/header/header_windows.jpg
   image_description: Fotografie eines Wohnhauses aus einem Fenster heraus.
   caption: 'Photo credit: [pexels.com](https://pexels.com)'
 title: Virtuelle Maschinen in Hyper-V mit Powershell erstellen
