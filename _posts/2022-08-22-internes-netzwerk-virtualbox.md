@@ -9,6 +9,7 @@ tags:
   - linux
 header:
   image: /images/header/header_network.jpg
+  teaser: /images/header/header_network.jpg
   image_description: Foto eines Switches
   caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/@pixabay/)'
 title: Interne Netzwerke in VirtualBox erstellen
