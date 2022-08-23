@@ -1,12 +1,16 @@
 ---
 title: eLearnSecurity Junior Penetration Tester
-description: eJPT ist ein praxisorientiertes Entry-Level Zertifikat für Penetration Testing und offensive IT-Sicherheit.
+description: >-
+  eJPT ist ein praxisorientiertes Entry-Level Zertifikat für Penetration Testing
+  und offensive IT-Sicherheit.
 tags:
- - security
+  - security
 header:
- image: /images/header/header_book.jpg
- image_description: "Foto eines Buchsr."
- caption: "Photo credit: [pexels.com](https://pexels.com)"
+  image: /images/header/header_book.jpg
+  teaser: /images/header/header_book.jpg
+  image_description: Foto eines Buchsr.
+  caption: 'Photo credit: [pexels.com](https://pexels.com)'
+published: true
 ---
 
 Ich habe letzte Woche die Zertifizierung zum eLearnSecurity Junior Penetration Tester (eJPT) erfolgreich abgeschlossen. Im deutschsprachigen Raum erscheint mir die Zertifizierung ziemlich unbekannt, da ich bei meiner Recherche sehr wenige deutschsprachige Blogposts und Erfahrungsberichte zum eJPT gefunden habe. Daher dachte ich mir, dass ich selber einen Post zum eJPT schreibe, um diese Lücke zu schließen.
@@ -52,4 +56,4 @@ Und hat sich das Ganze gelohnt? Meiner Meinung nach schon. Die Praxisorientierun
 
 {:refdef: style="text-align: center;"}
 ![eJPT-Zertifikat]({{ site.baseurl }}/images/ejpt.png)
-{: refdef} 
+{: refdef}
