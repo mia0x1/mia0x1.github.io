@@ -8,7 +8,7 @@ tags:
 ---
 Ein writeup zum TryHackMe-Raum [Overpass](https://tryhackme.com/room/overpass)
 
-**Info Notice:** Overpass - What happens when some broke CompSci students make a password manager?
+**Overpasse:** What happens when some broke CompSci students make a password manager?
 {: .notice--info}
 
 ## Disclaimer
@@ -59,25 +59,6 @@ Bei genauerem Hinsehen fällt auf, dass die Abfrage von Username und Passwowrd �
 {:refdef: style="text-align: center;"}
 ![JavaScript-Code Ausschnitt. Wenn SessionToken gesetzt ist, wird Passwortabfrage übersprungen.]({{ site.baseurl }}/images/overpass_js.png)
 {: refdef}
-
-{% highlight js %}
-async function login() {
-    const usernameBox = document.querySelector("#username");
-    const passwordBox = document.querySelector("#password");
-    const loginStatus = document.querySelector("#loginStatus");
-    loginStatus.textContent = ""
-    const creds = { username: usernameBox.value, password: passwordBox.value }
-    const response = await postData("/api/login", creds)
-    const statusOrCookie = await response.text()
-    if (statusOrCookie === "Incorrect credentials") {
-        loginStatus.textContent = "Incorrect Credentials"
-        passwordBox.value=""
-    } else {
-        Cookies.set("SessionToken",statusOrCookie)
-        window.location = "/admin"
-    }
-}
-{% endhighlight %}
 
 Wir verfizieren dies, in dem wir in den Developer Tools unter Storage einen Cookie mit dem Namen SessionToken und beliebigem Value setzen. Anschließend laden wir die Seite einmal neu. Wir erhalten einen SSH-Key von James.
 
