@@ -117,6 +117,26 @@ Für die Rootflag müssen wir unsere Privilegien erhöhen. Als geeigneten Angrif
 ![Anzeige des Cronjobs, welcher minütlich das Buildscript neu lädt und an Bash übergibt.]({{ site.baseurl }}/images/overpass_cronjob.png)
 {: refdef}
 
+Dazu erstellen wir als erstes die Reverse Shell, welche wir buildscript.sh nennen und im Ordner /downloads/src abspeichern, um dem Cronjob zu entsprechen.
+
+{:refdef: style="text-align: center;"}
+![Python Reverse Shell.]({{ site.baseurl }}/images/overpass_revshell.png)
+{: refdef}
+
+Wenn der Cronjob die Reverse Shell ausführt, verbindet sich diese zu unserem Listener auf dem Port 4242. 
+
+Als nächstes müssen wir /etc/hosts bearbeiten. Der Cronjob lädt das Skript mit curl von der Domain overpass.thm herunter. Wir passen die Hostfile so an, dass overpass.thm auf unsere IP-Adresse zeigt. Dazu ersetzen wir die 127.0.0.1 in der Zeile mit overpass.thm durch unsere eigene IP-Adresse.
+
+Damit die Reverse Shell von unserer Maschine heruntergeladen wird, starten wir einen HTTP-Server mit Python im Wurzelverzeichnis, wo sich auch der Ordner downloads befindet.
+```
+python3 -m http.server 80
+```
+
+Außerdem starten wir einen Netcat-Listener, damit sich die Reverse Shell zu unserer Maschine verbinden kann.
+
+```
+nc -lvnp 4242
+```
 
 
 
