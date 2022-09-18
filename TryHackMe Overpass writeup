@@ -98,8 +98,16 @@ Anschließend könnten wir den Hash mit John the Ripper cracken.
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
 ```
+Wenn schon den Hash gecrackt hat, lassen wir uns das Passwort für den SSH-Key anzeigen.
 
+``` 
+john id_rsa.hash --show
+``` 
+Mit dem Passwort und dem SSH-Key können wir uns nun als User james per SSH am Server authentifizieren. Dort finden wir auch die Userflag.
 
+{:refdef: style="text-align: center;"}
+![Authentifizierung am Server via SSH und Anzeigen der Userflag.]({{ site.baseurl }}/images/overpass_userflag.png)
+{: refdef}
 
 
 
