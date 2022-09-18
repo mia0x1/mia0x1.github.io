@@ -60,7 +60,7 @@ Bei genauerem Hinsehen fällt auf, dass die Abfrage von Username und Passwort ü
 ![JavaScript-Code Ausschnitt. Wenn SessionToken gesetzt ist, wird Passwortabfrage übersprungen.]({{ site.baseurl }}/images/overpass_js.png)
 {: refdef}
 
-Wir verfizieren dies, indem wir in den Developer Tools unter Storage einen Cookie mit dem Namen SessionToken und beliebigem Value setzen. Anschließend laden wir die Seite einmal neu. Wir erhalten einen SSH-Key von James.
+Wir verifizieren dies, indem wir in den Developer Tools unter Storage einen Cookie mit dem Namen SessionToken und beliebigem Value setzen. Anschließend laden wir die Seite einmal neu. Wir erhalten einen SSH-Key von James.
 
 {:refdef: style="text-align: center;"}
 ![JavaScript-Code Ausschnitt. Wenn SessionToken gesetzt ist, wird Passwortabfrage übersprungen.]({{ site.baseurl }}/images/overpass_sshkey.png)
