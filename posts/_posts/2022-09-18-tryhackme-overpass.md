@@ -8,7 +8,7 @@ tags:
 ---
 Ein writeup zum TryHackMe-Raum [Overpass](https://tryhackme.com/room/overpass)
 
-**Overpasse:** What happens when some broke CompSci students make a password manager?
+**Overpass:** What happens when some broke CompSci students make a password manager?
 {: .notice--info}
 
 ## Disclaimer
