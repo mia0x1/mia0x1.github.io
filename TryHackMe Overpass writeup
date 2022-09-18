@@ -1,6 +1,6 @@
 ---
-published: false
-description: Ein writeup zu dem TryHackMe Raum Overpass.
+published: true
+description: Ein writeup zum TryHackMe Raum Overpass.
 tags:
   - security
   - linux
@@ -132,7 +132,7 @@ Damit die Reverse Shell von unserer Maschine heruntergeladen wird, starten wir e
 python3 -m http.server 80
 ```
 
-Außerdem starten wir einen Netcat-Listener, damit sich die Reverse Shell zu unserer Maschine verbinden kann.
+Außerdem starten wir einen netcat-Listener, damit sich die Reverse Shell zu unserer Maschine verbinden kann.
 
 ```
 nc -lvnp 4242
