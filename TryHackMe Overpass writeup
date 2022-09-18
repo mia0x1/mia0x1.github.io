@@ -109,17 +109,16 @@ Mit dem Passwort und dem SSH-Key können wir uns nun als User james per SSH am S
 ![Authentifizierung am Server via SSH und Anzeigen der Userflag.]({{ site.baseurl }}/images/overpass_userflag.png)
 {: refdef}
 
-
-
 ## Privilege Escalation
 
-Um an die zweite Flag zu kommen, müssen wir unsere Privilegien erhöhen, da diese nur für root zugänglich ist. Dazu nutzen wir die SUID-Berechtigungen. SUID steht für "set owner userID upon execution". Das bedeutet, dass ein Programm mit den Berechtigungen des Besitzers der Datei ausgeführt wird und nicht mit den Berechtigungen des Users, der die Datei ausführt. Wir suchen also eine Datei, welche mit root Berechtigungen ausgeführt wird. Mit `find / -perm /4000 2>/dev/null` finden wir heraus, dass /bin/systemctl die SUID Berechtigung hat. 
+Für die Rootflag müssen wir unsere Privilegien erhöhen. Als geeigneten Angriffsvektor finden wir einen Cronjob unter /etc/crontab, welcher als root ausgeführt wird. Dieser lädt jede Minute ein buildscript von einer URL, welches durch eine Pipe an Bash übergeben wird. Um eine Shell als root zu bekommen, müssen wir das Skript durch eine Reverse Shell ersetzen.
 
 {:refdef: style="text-align: center;"}
-![systemctl hat die SUID Berechtigung.]({{ site.baseurl }}/images/systemctl.png)
+![Anzeige des Cronjobs, welcher minütlich das Buildscript neu lädt und an Bash übergibt.]({{ site.baseurl }}/images/overpass_cronjob.png)
 {: refdef}
 
-Mit systemctl lässt sich ein Systemservice erstellen, welcher mit root Rechten läuft. 
+
+
 
 Bei [GTFObins](https://gtfobins.github.io/gtfobins/systemctl/) findet man ein Beispiel, wie man mit systemctl und SUID Privilegien erhöhen kann.
 
