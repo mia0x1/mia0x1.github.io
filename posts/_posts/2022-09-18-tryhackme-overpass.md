@@ -52,15 +52,15 @@ Mit ffuf scannen wir den Webserver nach Ordnern und finden unter /admin ein Logi
 ![Loginforumlar auf der Adminseite]({{ site.baseurl }}/images/overpass_admin.png)
 {: refdef}
 
-Über die Developer Tools des Browsers sehen können wir Java Script untersuchen, welches beim Login ausgeführt wird. Die Datei heißt login.js.
+Über die Developer Tools des Browsers untersuchen wir Java Script, welches beim Login ausgeführt wird. Die Datei heißt login.js.
 
-Bei genauerem Hinsehen fällt auf, dass die Abfrage von Username und Passwowrd übersprungen wird, wenn ein Cookie mit dem Key SessionToken und beliebigem Value gesetzt ist.
+Bei genauerem Hinsehen fällt auf, dass die Abfrage von Username und Passwort übersprungen wird, wenn ein Cookie mit dem Key SessionToken und beliebigem Value gesetzt ist.
 
 {:refdef: style="text-align: center;"}
 ![JavaScript-Code Ausschnitt. Wenn SessionToken gesetzt ist, wird Passwortabfrage übersprungen.]({{ site.baseurl }}/images/overpass_js.png)
 {: refdef}
 
-Wir verfizieren dies, in dem wir in den Developer Tools unter Storage einen Cookie mit dem Namen SessionToken und beliebigem Value setzen. Anschließend laden wir die Seite einmal neu. Wir erhalten einen SSH-Key von James.
+Wir verfizieren dies, indem wir in den Developer Tools unter Storage einen Cookie mit dem Namen SessionToken und beliebigem Value setzen. Anschließend laden wir die Seite einmal neu. Wir erhalten einen SSH-Key von James.
 
 {:refdef: style="text-align: center;"}
 ![JavaScript-Code Ausschnitt. Wenn SessionToken gesetzt ist, wird Passwortabfrage übersprungen.]({{ site.baseurl }}/images/overpass_sshkey.png)
@@ -79,7 +79,7 @@ Anschließend könnten wir den Hash mit John the Ripper cracken.
 ```
 john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
 ```
-Wenn schon den Hash gecrackt hat, lassen wir uns das Passwort für den SSH-Key anzeigen.
+Wenn John den Hash gecrackt hat, lassen wir uns das Passwort für den SSH-Key anzeigen.
 
 ``` 
 john id_rsa.hash --show
@@ -98,7 +98,7 @@ Für die Rootflag müssen wir unsere Privilegien erhöhen. Als geeigneten Angrif
 ![Anzeige des Cronjobs, welcher minütlich das Buildscript neu lädt und an Bash übergibt.]({{ site.baseurl }}/images/overpass_cronjob.png)
 {: refdef}
 
-Dazu erstellen wir als erstes die Reverse Shell, welche wir buildscript.sh nennen und im Ordner /downloads/src abspeichern, um dem Cronjob zu entsprechen.
+Dazu erstellen wir als erstes die Reverse Shell, welche wir buildscript.sh nennen und im Ordner /downloads/src abspeichern, um der Struktur im Cronjob zu entsprechen.
 
 {:refdef: style="text-align: center;"}
 ![Python Reverse Shell.]({{ site.baseurl }}/images/overpass_revshell.png)
