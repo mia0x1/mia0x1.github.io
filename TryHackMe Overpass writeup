@@ -137,18 +137,14 @@ Außerdem starten wir einen Netcat-Listener, damit sich die Reverse Shell zu uns
 ```
 nc -lvnp 4242
 ```
-
-
-
-Bei [GTFObins](https://gtfobins.github.io/gtfobins/systemctl/) findet man ein Beispiel, wie man mit systemctl und SUID Privilegien erhöhen kann.
-
-Da TryHackMe schon verraten hat, dass die Flag unter /root/root.txt liegt, können wir diese einfach auslesen und an einen Ort kopieren, welche für unseren Useraccount lesbar ist. In unserem Fall legen wir die Flag unter /tmp/flag ab. Dazu wird über systemctl der Befehl `cat /root/root.txt > /tmp/flag` mit Rootrechten ausgeführt.
+Durch den Cronjob, welcher die Reverse Shell von unserer Maschine herunterlädt und mit Bash ausführt, wird die Verbindung zu unserem netcat-Listener aufgebaut. 
+Mit whoami verifizieren wir, dass wir Root sind und zeigen uns dann die Rootflag an.
 
 {:refdef: style="text-align: center;"}
-![Mithilfe der GTFObins kommen wir an die Root Flag.]({{ site.baseurl }}/images/rootflag.png)
+![Anzeige der rootflag.]({{ site.baseurl }}/images/overpass_rootflag.png)
 {: refdef}
 
-Das ist nur eine Möglichkeit, um die Privilegien zu erhöhen. Einen weiteren coolen Ansatz habe ich hier gefunden: [https://gist.github.com/A1vinSmith/78786df7899a840ec43c5ddecb6a4740](https://gist.github.com/A1vinSmith/78786df7899a840ec43c5ddecb6a4740)
-Hier wird ein Payload geschrieben, welcher einen Service ausführt, über den man dann eine reverse-shell mit Rootrechten bekommt. So könnte man direkt über die Shell auf den Ordner /root/ zugreifen und die Flag auslesen.
 
-Ich hoffe ihr hattet Spaß beim Lesen. Vielleicht konnte ich ja sogar jemandem weiterhelfen. Mir persönlich hat die Lösung der Vulnversity sehr viel Spaß gemacht, weswegen ich auch diesen Walkthrough verfasst habe.
+
+
+
