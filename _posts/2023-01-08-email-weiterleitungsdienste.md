@@ -6,8 +6,8 @@ tags:
   - privacy
   - security
 header:
-  image: /images/header/header_network.jpg
-  teaser: /images/header/header_network.jpg
+  image: /images/header/header_mailbox.jpg
+  teaser: /images/header/header_mailbox.jpg
   image_description: Foto eines Briefkastens
   caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/foto/roter-und-weisser-briefkasten-3703429/)'
 title: Mehr Datenschutz und Sicherheit mit E-Mail-Weiterleitungsdiensten
