@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 description: >-
   Mit der Advanced Data Protection führt Apple die Ende-zu-Ende Verschlüsselung
   für fast  alle Daten in iCloud ein.
@@ -14,6 +14,7 @@ header:
   caption: >-
     Photo credit:
     [pexels.com](https://www.pexels.com/de-de/foto/selektive-fotografie-von-skeleton-key-hanging-217316/)
+title: iCloud Advanced Data Protection
 ---
 
 Mit iOS 16.2 bzw. 16.3 in Deutschland führte Apple die sogenannte Advanced Data Protection (nachfolgend einfach nur ADP genannt) für iCloud ein. Diese bietet eine Ende-zu-Ende-Verschlüsselung für Inhalte an, die in der iCloud gespeichert werden. In den vergangenen Jahren wurde kontrovers darüber diskutiert, dass etwa Backups von iPhones in der iCloud nicht Ende-zu-Ende verschlüsselt sind. Die Daten waren zwar auf den Servern von Apple im Ruhezustand verschlüsselt, jedoch kontrollierte Apple dafür die Schlüssel. 
