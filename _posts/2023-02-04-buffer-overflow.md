@@ -21,7 +21,11 @@ Dafür habe ich mich intensiv mit dem [Buffer Overflows Made Easy Video](https:/
 
 ## Buffer Overflow
 
-Ein Buffer ist ein Bereich des Speichers, in welchem Daten temporär zwischengelagert werden können. In diesem können zum Beispiel Informationen über den Zustand eines Programms gespeichert werden. Bei einem Buffer Overflow werden mehr Datenmengen in den Buffer geschrieben, als reserviert wurden, so dass benachbarte Speicherbereiche überschrieben werden. Der Overflow führt dann dazu, dass das Programm abstürzt. Angreifer können in der Lage sein, einen Buffer Overflow auszunutzen, um eigenen Code auszuführen. Wir werden in diesem Beitrag einen Buffer Overflow im Stack finden. 
+Ein Buffer ist ein Bereich des Speichers, in welchem Daten temporär zwischengelagert werden können. In diesem können zum Beispiel Informationen über den Zustand eines Programms gespeichert werden. Bei einem Buffer Overflow werden mehr Datenmengen in den Buffer geschrieben, als reserviert wurden, so dass benachbarte Speicherbereiche überschrieben werden. 
+
+![Vereinfachte Darstellung eines Buffer Overflows]({{site.baseurl}}/images/buffer-00.png)
+
+Der Overflow führt dann dazu, dass das Programm abstürzt. Angreifer können in der Lage sein, einen Buffer Overflow auszunutzen, um eigenen Code auszuführen. Wir werden in diesem Beitrag einen Buffer Overflow im Stack finden. 
 Im Stack befinden sich verschiedene Pointer. Der Extended Stack Pointer (ESP) zeigt auf das oberste Element im Stack. Wichtig wird nachfolgend der Extended Instruction Pointer (EIP) sein. Dieser enthält die Speicheradresse, der als nächstes auszuführenden Instruktion. Wenn wir den EIP überschreiben können, kontrollieren wir den Stack.
 
 ## Aufbau des Labs
