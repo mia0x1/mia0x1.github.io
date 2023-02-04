@@ -1,8 +1,8 @@
 ---
 published: false
 description: >-
-  Mit der Advanced Data Protection führt Apple die Ende-zu-Ende Verschlüsselung
-  für fast  alle Daten in iCloud ein.
+  Ein Einsteig in das Thema Buffer Overvlow mit Immunity Debugger und
+  Vulnserver.
 tags:
   - security
 header:
@@ -114,13 +114,22 @@ Im Hexdump des Debuggers können wir die Liste mögliche Bad Characters ausfindi
 
 ## Das richtige Modul finden
 
-In diesem Schritt geht es darum Module zu finden, die keinen Speicherschutz haben, welche wir für unseren Shellcode ausnutzen können. Dazu verwenden wir das Python-Modul Mona, was wir unter https://github.com/corelan/mona herunterladen können. Mona.py muss in den Ordner PyCommands im Verzeichnis von Immunity Debugger gespeichert werden. Um Mona auszuführen schreiben wir in die Kommandozeile von Immunity !mona modules. Damit finden wir die essfunc.dll, welche über keinerlei Schutzmechanismen verfügt, was wir am False bei jedem Schutzmechanismus erkennen können.
+In diesem Schritt geht es darum Module zu finden, die keinen Speicherschutz besitzen, welche wir für unseren Shellcode ausnutzen können. Dazu verwenden wir das Python-Modul Mona, was wir unter [https://github.com/corelan/mona](https://github.com/corelan/mona) herunterladen können. Mona.py muss in den Ordner PyCommands im Verzeichnis des Immunity Debuggers gespeichert werden. Um Mona auszuführen schreiben wir in die Kommandozeile von Immunity !mona modules. Damit finden wir die essfunc.dll, welche über keinerlei Schutzmechanismen verfügt, was wir am False bei jedem Schutzmechanismus erkennen können.
 
+![Screenshot des gefundenen Moduls ohne Speicherschutz]({{site.baseurl}}/images/buffer-12.png)
 
-Anschließend müssen wir das Opcode-Äquivalent (also einen Maschinenbefehl für die CPU) für die JMP-Instruktion finden. Dies ist notwendig, damit wir später der CPU mitteilen können, dass unser eigener Code ausgeführt werden soll. Mit nasm_shell können wir die CPU Instruktionen JMP ESP in Hex übersetzen. In Hex ist es FFE4.
-Im Immunity Debugger suchen wir mit Hilfe von Mona nach der JMP ESP Anweisung in der essfunc.dll. Dies machen wir mit dem Befehl !mona find -s „\xff\xe4“ -m essfunc.dll
- Mona findet mehrere Pointer mit dieser Anweisung. Wir notieren uns die erste davon, nämlich 0x625011af. Mit dieser neuen Information passen wir wieder unser Python-Skript an. Anstatt der Bs, mit welchem wir vorher den EIP überschrieben haben, überschreiben wir nun den EIP mit dem Pointer. Dieser muss falsch herum notiert werden: \xaf\x11\x50\x62. Dies liegt an der der Byte-Reihenfolge in der x86-Architektur (Little-Endian-Fomat).
- SCREENSHOT ANGEPASSTS PYTHON SKRIPT
+Anschließend müssen wir das Opcode-Äquivalent (also einen Maschinenbefehl für die CPU) für die JMP ESP-Instruktion finden. Dies ist notwendig, damit wir später dem Programm mitteilen können, dass unser eigener Code ausgeführt werden soll. Mit nasm_shell können wir die CPU-Instruktionen JMP ESP in Hex übersetzen. In Hex ist dies FFE4.
+
+![Screenshot von nasm_shell]({{site.baseurl}}/images/buffer-13.png)
+
+Im Immunity Debugger suchen wir mit Mona nach der JMP ESP Anweisung in der essfunc.dll. Dies machen wir mit dem Befehl ```!mona find -s „\xff\xe4“ -m essfunc.dll```
+Mona findet mehrere Pointer mit dieser Anweisung. Wir notieren uns die erste davon, nämlich 0x625011af. 
+
+![Screenshot des Pointers mit der JMP ESP Anweisung]({{site.baseurl}}/images/buffer-14.png)
+
+Mit dieser neuen Information passen wir wieder unser Python-Skript an. Anstatt der Bs, mit welchem wir vorher den EIP überschrieben haben, überschreiben wir nun den EIP mit dem Pointer. Dieser muss falsch herum notiert werden: \xaf\x11\x50\x62. Dies liegt an der der Abarbeitung Byte-Reihenfolge in der x86-Architektur (Little-Endian-Fomat).
+
+![Screenshot des angepassten Python-Skripts]({{site.baseurl}}/images/buffer-15.png)
 
 Nun klicken wir im Immunity Debugger in der oberen Symbolleiste auf den blauen Pfeil nach rechts und suchen nach der Adresse 625011af. Diese markieren wir dann und drücken F2, um einen Breakpoint zu setzen. Der Debugger wird das Programm an dieser Stelle stoppen und auf weitere Instruktionen warten. Wir können sehen, dass der EIP mit dem Pointer von essfunc.dll überschrieben wurde. Wir sind jetzt soweit, dass wir unseren Shellcode erstellen können, mit dem wir letztendlich den Zugriff auf den Vulnserver erhalten.
 
