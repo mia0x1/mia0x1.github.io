@@ -159,11 +159,3 @@ In Kali Linux öffnen wir eine Netcat-Listener mit nc -lvnp 4444. Wenn wir nun d
 
 
 
-
-![Screenshot des EFF-Kampagnenlogos zu Fix It Already]({{site.baseurl}}/images/adp-1.png)
-
-
-
-
-
-
