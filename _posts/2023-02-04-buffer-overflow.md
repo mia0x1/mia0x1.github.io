@@ -30,7 +30,7 @@ Im Stack befinden sich verschiedene Pointer. Der Extended Stack Pointer (ESP) ze
 Vorweg der übliche **Disclaimer**: ihr könnt die Tools, welche hier vorgestellt werden für eure eigene Infrastruktur zum Lernen verwenden oder im Rahmen eines Penetration Tests einsetzen, wenn ihr dafür beauftragt wurdet. Jedoch dürft ihr diese Tools niemals gegen fremde Systeme ohne explizite Erlaubnis einsetzen.
 {: .notice--danger}
 
-Für den Blogpost habe ich ein Lab aufgebaut, welches im Wesentlichen aus den folgenden Komponenten besteht:
+Zum Lernen und für diesen Blogpost habe ich ein Lab aufgebaut, welches im Wesentlichen aus den folgenden Komponenten besteht:
 
 * Windows 10 mit Vulnserver und Immunity Debugger
 * Kali Linux mit diversen Tools, u.a. Python-Skripte, um den Buffer Overflow zu finden und auszunutzen, Metasploit für verschiedene Payloads.
