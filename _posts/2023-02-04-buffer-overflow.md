@@ -12,7 +12,7 @@ header:
   caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/@blitzboy/)'
 title: Buffer Overflow - Vulnserver
 ---
-Das Offensive Pentesting Modul bei [tryhackme](https://tryhackme.com/path-action/pentesting/join) wollte ich schon vor längerer Zeit abschließen. Allerdings ist dann der Stillstand eingekehrt, als ich bei der Buffer Overflow Exploitation angekommen bin. Bis dato hatte ich mich nie richtig mit dem Thema auseinandergesetzt und die Challenges kamen mir auf den ersten Blick nicht sehr einsteigerfreundlich vor. Zufällig bin ich diese Woche wieder das tryhackme-Modul gestolpert und habe entschieden mich in Buffer Overflows einzuarbeiten.
+Das Offensive Pentesting Modul bei [tryhackme](https://tryhackme.com/path-action/pentesting/join) wollte ich schon vor längerer Zeit abschließen. Allerdings ist dann der Stillstand eingekehrt, als ich bei der Buffer Overflow Exploitation angekommen bin. Bis dato hatte ich mich nie richtig mit dem Thema auseinandergesetzt und die Challenges kamen mir auf den ersten Blick nicht sehr einsteigerfreundlich vor. Zufällig bin ich diese Woche wieder über das tryhackme-Modul gestolpert und habe entschieden mich in Buffer Overflows einzuarbeiten.
 
 Dafür habe ich mich intensiv mit dem [Buffer Overflows Made Easy Video](https://www.youtube.com/watch?v=ncBblM920jw) von The Cyber Mentor beschäftigt und dieses auch als Orientierung für den Blogbeitrag verwendet. 
 
@@ -27,7 +27,8 @@ Im Stack befinden sich verschiedene Pointer. Der Extended Stack Pointer (ESP) ze
 
 ## Aufbau des Labs
 
-Vorweg der übliche Disclaimer: ihr könnt die Tools, welche hier vorgestellt werden für eure eigene Infrastruktur zum Lernen verwenden oder im Rahmen eines Penetration Tests einsetzen, wenn ihr dafür beauftragt wurdet. Jedoch dürft ihr diese Tools niemals gegen fremde Systeme ohne explizite Erlaubnis einsetzen.{: .notice--info}
+Vorweg der übliche Disclaimer: ihr könnt die Tools, welche hier vorgestellt werden für eure eigene Infrastruktur zum Lernen verwenden oder im Rahmen eines Penetration Tests einsetzen, wenn ihr dafür beauftragt wurdet. Jedoch dürft ihr diese Tools niemals gegen fremde Systeme ohne explizite Erlaubnis einsetzen.
+{: .notice--info}
 
 Für den Blogpost habe ich ein Lab aufgebaut, welches im Wesentlichen aus den folgenden Komponenten besteht:
 
