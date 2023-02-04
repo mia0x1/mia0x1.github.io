@@ -102,13 +102,15 @@ Im Debugger können wir sehen, dass der Buffer wieder mit A überschrieben wurde
 
 ## Bad Characters finden
 
-Im nächsten Schritt müssen wir Bad Characters finden. Bad Characters sind Zeichen, die wir für unseren Shellcode im letzten Schritt nicht verwenden dürfen, da diese Zeichen Funktionen in dem Programm haben. Wir erstellen uns zunächst eine Liste mit möglichen Bad Characters. Dafür gibt es zum Beispiel Generatoren auf GitHub https://github.com/cytopia/badchars
+Im nächsten Schritt müssen wir Bad Characters finden. Bad Characters sind Zeichen, die wir für unseren Shellcode im letzten Schritt nicht verwenden dürfen, da diese Zeichen Funktionen in dem Programm haben, was den Buffer verwendet. Wir erstellen uns zunächst eine Liste mit möglichen Bad Characters. Dafür gibt es zum Beispiel Generatoren auf [GitHub](https://github.com/cytopia/badchars).
 
-In dem Fall kopieren wir einfach die Badchars aus dem Python-Beispiel und variieren wieder unser Skript, sodass die Bad Chars an den Vulnserver gesendet werden. 
+In dem Fall kopieren wir einfach die Badchars aus dem Python-Beispiel in dem GitHub-Repository und passen wieder mal unser Skript an, sodass die Bad Chars an den Vulnserver gesendet werden. 
 
-SCREENSHOT PYTHON SKRIPT
+![Screenshot des Python-Skripts mit Bad Characters]({{site.baseurl}}/images/buffer-10.png)
 
-Im Hexdump können wir die Liste mögliche Bad Characters ausfindig machen, in dem wir einfach die Zeichenfolge untersuchen. Um die richtige Stelle im Hexdump zu finden, klicken wir oben rechts bei den Registern mit einem Rechtsklick auf den ESP dann auf Follow in Dump. Im Hexdump sind jetzt unsere Zeichen aus der Badcharacters-Variable zu sehen. Angefangen mit 01 (x01) bis 255 (xff). Da wir hier keine Anomalien erkennen können, sondern die Zahlen einfach hochgezählt werden, gibt es in diesem Programm keine Bad Characters.
+Im Hexdump des Debuggers können wir die Liste mögliche Bad Characters ausfindig machen, in dem wir einfach die Zeichenfolge untersuchen. Um die richtige Stelle im Hexdump zu finden, klicken wir oben rechts bei den Registern mit einem Rechtsklick auf den ESP dann auf Follow in Dump. Im Hexdump sind jetzt unsere Zeichen aus der Badcharacters-Variable zu sehen. Angefangen mit 01 (x01) bis 255 (xff). Da wir hier keine Anomalien erkennen können, sondern die Zahlen einfach hochgezählt werden, gibt es in diesem Programm keine Bad Characters.
+
+![Screenshot der Bad Characters im Hexdump]({{site.baseurl}}/images/buffer-11.png)
 
 ## Das richtige Modul finden
 
