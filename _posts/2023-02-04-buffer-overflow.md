@@ -56,14 +56,14 @@ s_string_variable(„0“);
 
 ```generic_send_tcp 172.16.4.1 9999 spikescript.spk```
 
-TRUN ist ein Programm des Vulnservers, welches anfällig für Buffer Overflow ist. Mithilfe des Spiking-Skripts bringen wir Vulnserver mit TRUN zum Absturz, um zu validieren, dass ein Buffer Overflow mögöich ist.
+TRUN ist ein Programm des Vulnservers, welches anfällig für Buffer Overflow ist. Mithilfe des Spiking-Skripts bringen wir Vulnserver mit TRUN zum Absturz, um zu validieren, dass ein Buffer Overflow möglich ist.
 
 
 ## Fuzzing
 
-Da das Spiking erfolgreich war, kümmern wir uns jetzt um das Fuzzing. Während wir jedoch beim Spiking zufällige Daten an das Programm gesendet haben, bis es abgestürzt ist, werden wir beim Fuzzing strukturierter vorgehen.
+Da das Spiking erfolgreich war, kümmern wir uns jetzt um das Fuzzing. Während wir beim Spiking zufällige Daten an das Programm gesendet haben, bis es abgestürzt ist, werden wir beim Fuzzing etwas strukturierter vorgehen.
 
-Mit Python erstellen wir ein Skript, welches zunächst Daten mit einer Länge von 100 Bytes an Vulnserver sendet. Durch den While-Loop wird die Anzahl der Bytes mit jeder Iteration um 100 erhöht. Dadurch können wir mit einer relativen Genauigkeit erfahren, wo sich der EIP befindet. 
+Mit Python erstellen wir ein Skript, welches zunächst Daten mit einer Länge von 100 Bytes an Vulnserver sendet. Durch den While-Loop wird die Anzahl der Bytes mit jeder Iteration um 100 Bytes erhöht. Dadurch können wir mit einer relativen Genauigkeit erfahren, wo sich der EIP befindet. 
 
 ![Fuzzing-Skript in Python]({{site.baseurl}}/images/buffer-02.png)
 
@@ -79,7 +79,7 @@ Ich habe in meinen Versuchen festgestellt, dass das Skript nicht so genau funkti
 
 ## Offset finden
 
-In diesem Schritt müssen wir den Offset-Wert finden. Dazu reicht es eine kleine Anpassung an dem Python-Skripts vorzunehmen. Statt einer variablen Datenmenge in mehreren Versuchen, senden wir nun ein bestimmtes Muster mit einer festen Byte-Länge an die Applikation. Mithilfe des Musters können wir im Debugger den EIP finden. Da das Fuzzing uns nur annähernd verraten hat, wie groß der Buffer ist, erstellen wir ein Pattern mit einer Länge von 3.000 Bytes, was ausreichend sein sollte. Dies machen wir mit einem Metasploit Modul.
+In diesem Schritt müssen wir den Offset-Wert finden. Dazu reicht es eine kleine Anpassung an dem Python-Skripts vorzunehmen. Statt einer variablen Datenmenge in mehreren Versuchen, senden wir nun ein bestimmtes Muster mit einer festen Byte-Länge an die Applikation. Mithilfe des Musters können wir im Debugger den EIP finden. Da das Fuzzing uns nur annähernd verraten hat, wie groß der Buffer ist, erstellen wir ein Pattern mit einer Länge von 3.000 Bytes, was ausreichend sein sollte. Dies machen wir mit einem Metasploit-Tool namens pattern_create.
 
 /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 3000
 
@@ -110,13 +110,13 @@ In dem Fall kopieren wir einfach die Badchars aus dem Python-Beispiel in dem Git
 
 ![Screenshot des Python-Skripts mit Bad Characters]({{site.baseurl}}/images/buffer-10.png)
 
-Im Hexdump des Debuggers können wir die Liste mögliche Bad Characters ausfindig machen, in dem wir einfach die Zeichenfolge untersuchen. Um die richtige Stelle im Hexdump zu finden, klicken wir oben rechts bei den Registern mit einem Rechtsklick auf den ESP dann auf Follow in Dump. Im Hexdump sind jetzt unsere Zeichen aus der Badcharacters-Variable zu sehen. Angefangen mit 01 (x01) bis 255 (xff). Da wir hier keine Anomalien erkennen können, sondern die Zahlen einfach hochgezählt werden, gibt es in diesem Programm keine Bad Characters.
+Im Hexdump des Debuggers können wir mögliche Bad Characters ausfindig machen, in dem wir einfach die Zeichenfolge untersuchen. Um die richtige Stelle im Hexdump zu finden, klicken wir oben rechts bei den Registern mit einem Rechtsklick auf den ESP dann auf Follow in Dump. Im Hexdump sind jetzt unsere Zeichen aus der Badcharacters-Variable zu sehen. Angefangen mit 01 (x01) bis 255 (xff). Da wir hier keine Anomalien erkennen können, sondern die Zahlen einfach hochgezählt werden, gibt es in diesem Programm keine Bad Characters.
 
 ![Screenshot der Bad Characters im Hexdump]({{site.baseurl}}/images/buffer-11.png)
 
 ## Das richtige Modul finden
 
-In diesem Schritt geht es darum Module zu finden, die keinen Speicherschutz besitzen, welche wir für unseren Shellcode ausnutzen können. Dazu verwenden wir das Python-Modul Mona, was wir unter [https://github.com/corelan/mona](https://github.com/corelan/mona) herunterladen können. Mona.py muss in den Ordner PyCommands im Verzeichnis des Immunity Debuggers gespeichert werden. Um Mona auszuführen schreiben wir in die Kommandozeile von Immunity !mona modules. Damit finden wir die essfunc.dll, welche über keinerlei Schutzmechanismen verfügt, was wir am False bei jedem Schutzmechanismus erkennen können.
+In diesem Schritt geht es darum Module zu finden, die keinen Speicherschutz besitzen, welche wir für unseren Shellcode ausnutzen können. Dazu verwenden wir das Python-Modul Mona, was wir unter [https://github.com/corelan/mona](https://github.com/corelan/mona) herunterladen können. Mona.py muss in den Ordner PyCommands im Verzeichnis des Immunity Debuggers gespeichert werden. Um Mona auszuführen, schreiben wir in die Kommandozeile von Immunity !mona modules. Damit finden wir die essfunc.dll, welche über keinerlei Schutzmechanismen verfügt, was wir am False bei jedem Schutzmechanismus erkennen können.
 
 ![Screenshot des gefundenen Moduls ohne Speicherschutz]({{site.baseurl}}/images/buffer-12.png)
 
@@ -147,12 +147,12 @@ Wir legen fest, dass eine Reverse Shell als Payload generiert werden soll. Als L
 
 ![Erstellung des Shellcodes mit msfvenom]({{site.baseurl}}/images/buffer-16.png)
 
-Den Shellcode in Hex kopieren wir und fügen ihm unseren Python-Skript hinzu.
+Den Shellcode in Hex kopieren wir und fügen ihn unserem Python-Skript hinzu.
 Im Video von The Cyber Mentor wurde darauf hingewiesen, dass das Skript an dieser Stelle mit der Funktion encode nicht funktioniert. Stattdessen muss man alle Daten manuell in ein Byteformat umwandeln. Dies macht man, indem man einfach ein b voranstellt, wie auf dem Screenshot zu erkennen ist.
 
 ![Screenshot des Python-Skripts mit manueller Umwandlung in Bytecode]({{site.baseurl}}/images/buffer-17.png)
 
-In Kali Linux öffnen wir eine Netcat-Listener mit nc -lvnp 4444. Wenn wir nun das Python-Skript mit dem Reverse-Shell Payload ausführen, sollte vulnserver eine Verbindung zu unserem Listener aufbauen. Damit haben wir eine Shell auf der Windows-Maschine und somit unser Ziel erreicht.
+In Kali Linux öffnen wir einen Netcat-Listener mit nc -lvnp 4444. Wenn wir nun das Python-Skript mit dem Reverse-Shell Payload ausführen, sollte vulnserver eine Verbindung zu unserem Listener aufbauen. Damit haben wir eine Shell auf der Windows-Maschine und somit unser Ziel erreicht.
 
 ![Screenshot der erfolgreichen Herstellung der Reverse Shell mit netcat]({{site.baseurl}}/images/buffer-18.png)
 
