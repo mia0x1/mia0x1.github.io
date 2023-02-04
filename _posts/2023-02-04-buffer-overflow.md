@@ -6,15 +6,11 @@ description: >-
 tags:
   - security
 header:
-  image: /images/header/header_key.jpg
-  teaser: /images/header/header_key.jpg
-  image_description: 'Foto eines Schlüssels, der an einer Wand aufgehängt wurde.'
-  caption: >-
-    Photo credit:
-    [pexels.com](https://www.pexels.com/de-de/foto/selektive-fotografie-von-skeleton-key-hanging-217316/)
+  image: /images/header/header_river.jpg
+  teaser: /images/header/header_river.jpg
+  image_description: Foto eines Flusses
+  caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/@blitzboy/)'
 ---
-## A New Post
-
 Das Offensive Pentesting Modul bei [tryhackme](https://tryhackme.com/path-action/pentesting/join) wollte ich schon vor längerer Zeit abschließen. Allerdings ist dann der Stillstand eingekehrt, als ich bei der Buffer Overflow Exploitation angekommen bin. Bis dato hatte ich mich nie richtig mit dem Thema auseinandergesetzt und die Challenges kamen mir auf den ersten Blick nicht sehr einsteigerfreundlich vor. Zufällig bin ich diese Woche wieder das tryhackme-Modul gestolpert und habe entschieden mich in Buffer Overflows einzuarbeiten.
 
 Dafür habe ich mich intensiv mit dem [Buffer Overflows Made Easy Video](https://www.youtube.com/watch?v=ncBblM920jw) von The Cyber Mentor beschäftigt und dieses auch als Orientierung für den Blogbeitrag verwendet. 
