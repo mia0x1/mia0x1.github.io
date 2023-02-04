@@ -1,5 +1,5 @@
 ---
-published: false
+published: trie
 description: >-
   Ein Einsteig in das Thema Buffer Overvlow mit Immunity Debugger und
   Vulnserver.
@@ -10,6 +10,7 @@ header:
   teaser: /images/header/header_river.jpg
   image_description: Foto eines Flusses
   caption: 'Photo credit: [pexels.com](https://www.pexels.com/de-de/@blitzboy/)'
+title: Buffer Overflow - Vulnserver
 ---
 Das Offensive Pentesting Modul bei [tryhackme](https://tryhackme.com/path-action/pentesting/join) wollte ich schon vor längerer Zeit abschließen. Allerdings ist dann der Stillstand eingekehrt, als ich bei der Buffer Overflow Exploitation angekommen bin. Bis dato hatte ich mich nie richtig mit dem Thema auseinandergesetzt und die Challenges kamen mir auf den ersten Blick nicht sehr einsteigerfreundlich vor. Zufällig bin ich diese Woche wieder das tryhackme-Modul gestolpert und habe entschieden mich in Buffer Overflows einzuarbeiten.
 
