@@ -40,6 +40,8 @@ Für den Blogpost habe ich ein Lab aufgebaut, welches im Wesentlichen aus den fo
 
 Als erstes starten wir den Vulnserver, indem wir die vulnserver.exe als Administrator ausführen. Außerdem starten wir den Immunity Debugger ebenfalls als Administrator. Um Vulnserver in den Debugger zu laden, klicken wir in Immunity Debugger oben auf File und dort dann auf Attach, wo wir anschließend den Vulnserver Prozess auswählen. Damit das Programm im Debugger läuft, müssen wir oben auf den Button mit dem Play-Symbol klicken.
 
+![Screenshot des Immunity Debuggers]({{site.baseurl}}/images/buffer-01.png)
+
 Immunity Debugger enthält 4 Panels, die unterschiedliche Informationen enthalten. Oben links sehen wir die Assembly Instruktionen, sowie den Maschinencode. Im Panel oben rechts ist das CPU-Register. Unten links steht der Hexdump des ausgeführten Programms und rechts daneben sehen wir den Memory Stack. 
 Das Finden und Ausnutzen des Buffer Overflows lässt sich in mehrere Phasen unterteilen. Wir beginnen mit dem sogenannten Spiking.
 
@@ -61,8 +63,15 @@ Da das Spiking erfolgreich war, kümmern wir uns jetzt um das Fuzzing. Während 
 
 Mit Python erstellen wir ein Skript, welches zunächst Daten mit einer Länge von 100 Bytes an Vulnserver sendet. Durch den While-Loop wird die Anzahl der Bytes mit jeder Iteration um 100 erhöht. Dadurch können wir mit einer relativen Genauigkeit erfahren, wo sich der EIP befindet. 
 
+![Fuzzing-Skript in Python]({{site.baseurl}}/images/buffer-02.png)
+
+
 Mit chmod + x machen wir das Skript ausführbar und führen es anschließend aus.
 Das Skript zeigt uns an, dass das Programm bei 2.700 Bytes abstürzt. Im Debugger können wir im Register-Panel sehen, dass die As in den Buffer geschrieben wurden.
+
+![Ausführung des Fuzzing-Skripts]({{site.baseurl}}/images/buffer-03.png)
+
+![Überschriebener Buffer im Debugger]({{site.baseurl}}/images/buffer-04.png)
 
 Ich habe in meinen Versuchen festgestellt, dass das Skript nicht so genau funktioniert. Mal kam der Absturz schon bei 2.500 Bytes, mal bei 2.900 Bytes. Für uns ist diese Information schon ausreichend. Die durchs Fuzzing gewonnen Informationen können wir im nächsten Schritt anwenden.
 
