@@ -27,8 +27,8 @@ Im Stack befinden sich verschiedene Pointer. Der Extended Stack Pointer (ESP) ze
 
 ## Aufbau des Labs
 
-Vorweg der übliche Disclaimer: ihr könnt die Tools, welche hier vorgestellt werden für eure eigene Infrastruktur zum Lernen verwenden oder im Rahmen eines Penetration Tests einsetzen, wenn ihr dafür beauftragt wurdet. Jedoch dürft ihr diese Tools niemals gegen fremde Systeme ohne explizite Erlaubnis einsetzen.
-{: .notice--info}
+Vorweg der übliche **Disclaimer**: ihr könnt die Tools, welche hier vorgestellt werden für eure eigene Infrastruktur zum Lernen verwenden oder im Rahmen eines Penetration Tests einsetzen, wenn ihr dafür beauftragt wurdet. Jedoch dürft ihr diese Tools niemals gegen fremde Systeme ohne explizite Erlaubnis einsetzen.
+{: .notice--danger}
 
 Für den Blogpost habe ich ein Lab aufgebaut, welches im Wesentlichen aus den folgenden Komponenten besteht:
 
