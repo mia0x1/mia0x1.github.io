@@ -15,9 +15,6 @@ header:
 ---
 ## A New Post
 
-Buffer Overflow Einstieg
-
-
 Das Offensive Pentesting Modul bei [tryhackme](https://tryhackme.com/path-action/pentesting/join) wollte ich schon vor längerer Zeit abschließen. Allerdings ist dann der Stillstand eingekehrt, als ich bei der Buffer Overflow Exploitation angekommen bin. Bis dato hatte ich mich nie richtig mit dem Thema auseinandergesetzt und die Challenges kamen mir auf den ersten Blick nicht sehr einsteigerfreundlich vor. Zufällig bin ich diese Woche wieder das tryhackme-Modul gestolpert und habe entschieden mich in Buffer Overflows einzuarbeiten.
 
 Dafür habe ich mich intensiv mit dem [Buffer Overflows Made Easy Video](https://www.youtube.com/watch?v=ncBblM920jw) von The Cyber Mentor beschäftigt und dieses auch als Orientierung für den Blogbeitrag verwendet. 
@@ -49,12 +46,15 @@ Das Finden und Ausnutzen des Buffer Overflows lässt sich in mehrere Phasen unte
 
 Das Spiking kann man sich wie ein Stresstest für das Programm vorstellen. Wir senden einfach eine Variation an Daten unterschiedlicher Länge, um zu testen, wie das Programm reagiert. Unser Ziel ist es an dieser Stelle das Programm zum Absturz zu bringen. Gelingt uns dies, haben wir die Bestätigung, dass ein Buffer Overflow möglich ist. Dazu schreiben wir ein kurzes Skript und führen dies mit dem Tool generic_send_tcp aus. 
 
-Syntax: 
+```
+Syntax:
 s_readline(); s_string(„TRUN “);
 s_string_variable(„0“);
+```
 
-generic_send_tcp 172.16.4.1 9999 spikescript.spk
- TRUN ist ein Programm in Vulnserver, welche anfällig für Buffer Overflow ist. Mithilfe des Spiking-Skripts bringen wir Vulnserver mit TRUN zum Absturz, was zeigt, dass ein Buffer Overflow möglich ist. 
+```generic_send_tcp 172.16.4.1 9999 spikescript.spk```
+
+TRUN ist ein Programm des Vulnservers, welches anfällig für Buffer Overflow ist. Mithilfe des Spiking-Skripts bringen wir Vulnserver mit TRUN zum Absturz, um zu validieren, dass ein Buffer Overflow mögöich ist.
 
 
 ## Fuzzing
@@ -80,11 +80,25 @@ Ich habe in meinen Versuchen festgestellt, dass das Skript nicht so genau funkti
 In diesem Schritt müssen wir den Offset-Wert finden. Dazu reicht es eine kleine Anpassung an dem Python-Skripts vorzunehmen. Statt einer variablen Datenmenge in mehreren Versuchen, senden wir nun ein bestimmtes Muster mit einer festen Byte-Länge an die Applikation. Mithilfe des Musters können wir im Debugger den EIP finden. Da das Fuzzing uns nur annähernd verraten hat, wie groß der Buffer ist, erstellen wir ein Pattern mit einer Länge von 3.000 Bytes, was ausreichend sein sollte. Dies machen wir mit einem Metasploit Modul.
 
 /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 3000
- Das generierte Pattern übernehmen wir in unser Python-Skript und weisen es der Variable pattern zu.
 
-Nach der Ausführung des Skripts sehen wir im Debugger, dass der Vulnserver wieder wie erwartet abgestürzt ist. Den EIP sollten wir mit unserem Pattern überschrieben haben. Mit Metasploit können wir jetzt nach der Zeichenkette suchen, mit welcher der EIP überschrieben wurde und bekommen die exakte Position des Offsets. Das pattern_offset Skript gibt uns einen Match für 2.003 Bytes. Wir können den Output des Skripts validieren, indem wir den EIP gezielt mit einer vordefinierten Zeichenkette überschreiben. Dazu bedarf es wieder nur einer kleineren Anpassung unseres Python-Skripts.
+![Das mit Metasploit erstellte Pattern]({{site.baseurl}}/images/buffer-05.png)
 
-Dazu schreiben wir 2.003 Bytes mit A in den Buffer und dann 4 Bytes B, um im Debugger eine Unterscheidung zu sehen. Wir sehen, dass der Buffer wieder mit A überschrieben wurde. Der EIP hat einen Wert von 42424242. 42 ist Hex für ASCII B und somit haben wir den Beweis erbracht, dass wir den EIP gefunden haben. 
+Das generierte Pattern übernehmen wir in unser Python-Skript und weisen es der Variable pattern zu.
+
+![Angepasstes Skript mit Pattern]({{site.baseurl}}/images/buffer-06.png)
+
+Nach der Ausführung des Skripts sehen wir im Debugger, dass der Vulnserver wieder wie erwartet abgestürzt ist. Den EIP sollten wir mit unserem Pattern überschrieben haben. Mit Metasploit können wir jetzt nach der Zeichenkette suchen, mit welcher der EIP überschrieben wurde und bekommen die exakte Position des Offsets. Das pattern_offset Skript gibt uns einen Match für 2.003 Bytes. 
+
+![Ergebnis des pattern_offset Skripts]({{site.baseurl}}/images/buffer-07.png)
+
+Wir können den Output des Skripts validieren, indem wir den EIP gezielt mit einer vordefinierten Zeichenkette überschreiben. Dazu bedarf es wieder nur einer kleineren Anpassung unseres Python-Skripts. Wir schreiben wieder 2.003 Bytes As in den Buffer und nachfolgend 4 Bytes Bs, um im Debugger eine Unterscheidung zu sehen. 
+
+![Screenshot des Skripts zur Validierung]({{site.baseurl}}/images/buffer-08.png)
+
+Im Debugger können wir sehen, dass der Buffer wieder mit A überschrieben wurde. Der EIP hat einen Wert von 42424242. 42 ist Hex für ASCII B und somit haben wir den Beweis erbracht, dass wir den EIP gefunden haben. 
+
+![Screenshot des Debuggers: EIP wurde mit Bs überschrieben]({{site.baseurl}}/images/buffer-09.png)
+
 
 ## Bad Characters finden
 
