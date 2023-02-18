@@ -1,5 +1,5 @@
 ---
-published: trie
+published: true
 description: >-
   Ein Einsteig in das Thema Buffer Overvlow mit Immunity Debugger und
   Vulnserver.
@@ -155,9 +155,3 @@ Im Video von The Cyber Mentor wurde darauf hingewiesen, dass das Skript an diese
 In Kali Linux öffnen wir einen Netcat-Listener mit nc -lvnp 4444. Wenn wir nun das Python-Skript mit dem Reverse-Shell Payload ausführen, sollte vulnserver eine Verbindung zu unserem Listener aufbauen. Damit haben wir eine Shell auf der Windows-Maschine und somit unser Ziel erreicht.
 
 ![Screenshot der erfolgreichen Herstellung der Reverse Shell mit netcat]({{site.baseurl}}/images/buffer-18.png)
-
-
-
-
-
-
