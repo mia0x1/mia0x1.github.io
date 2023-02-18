@@ -1,7 +1,6 @@
 ---
-
 published: true
-description: >-
+description:
 T-Pot ist eine Plattform mit über 20 verschiedenen Honeypots. 
 tags:
   - security
