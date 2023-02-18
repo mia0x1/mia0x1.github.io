@@ -1,5 +1,11 @@
 ---
+
 published: true
+description: >-
+T-Pot ist eine Plattform mit über 20 verschiedenen Honeypots. 
+tags:
+  - security
+title: T-Pot in Azure installieren
 ---
 [T-Pot](https://github.com/telekom-security/tpotce) ist eine Plattform von Telekom Security, welche über 20 verschiedene Honeypots enthält. Neben den Honeypots enthält T-Pot eine Weboberfläche mit verschiedenen Tools und Dashboards zur Datenanalyse.
 
