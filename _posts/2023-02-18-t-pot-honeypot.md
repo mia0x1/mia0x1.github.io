@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 [T-Pot](https://github.com/telekom-security/tpotce) ist eine Plattform von Telekom Security, welche über 20 verschiedene Honeypots enthält. Neben den Honeypots enthält T-Pot eine Weboberfläche mit verschiedenen Tools und Dashboards zur Datenanalyse.
 
@@ -84,31 +84,3 @@ Im unteren Teil des Dashboard werden die Ergebnisse von Suricata angezeigt. Dies
 Über das Hauptmenü der Weboberfläche können wir die Attack Map öffnen. Hier kann man Angriffe und deren geographischen Ursprung in einer interaktiven Weltkarte beobachten.
 
 ![Screenshot der Attack Map]({{site.baseurl}}/images/tpot-14.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Das Offensive Pentesting Modul bei [tryhackme](https://tryhackme.com/path-action/pentesting/join) wollte ich schon vor längerer Zeit abschließen. Allerdings ist dann der Stillstand eingekehrt, als ich bei der Buffer Overflow Exploitation angekommen bin. Bis dato hatte ich mich nie richtig mit dem Thema auseinandergesetzt und die Challenges kamen mir auf den ersten Blick nicht sehr einsteigerfreundlich vor. Zufällig bin ich diese Woche wieder über das tryhackme-Modul gestolpert und habe entschieden mich in Buffer Overflows einzuarbeiten.
-
-Dafür habe ich mich intensiv mit dem [Buffer Overflows Made Easy Video](https://www.youtube.com/watch?v=ncBblM920jw) von The Cyber Mentor beschäftigt und dieses auch als Orientierung für den Blogbeitrag verwendet. 
-
-## Buffer Overflow
-
-Ein Buffer ist ein Bereich des Speichers, in welchem Daten temporär zwischengelagert werden können. In diesem können zum Beispiel Informationen über den Zustand eines Programms gespeichert werden. Bei einem Buffer Overflow werden mehr Datenmengen in den Buffer geschrieben, als reserviert wurden, so dass benachbarte Speicherbereiche überschrieben werden. 
-
-![Vereinfachte Darstellung eines Buffer Overflows]({{site.baseurl}}/images/buffer-00.png)
