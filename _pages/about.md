@@ -29,10 +29,12 @@ Der Blog wird mit [Jekyll](https://jekyllrb.com/) auf GitHub Pages gehostet. Das
 Das Favicon stammt von [Flaticon](https://www.flaticon.com/free-icons/coffee).
 Das Terminal-Logo im Header stammt ebenfalls von [Flaticon](https://www.flaticon.com/free-icon/terminal_7544562).
 
+Der Blog kann über einen Feedreader abonniert werden. Die URL für den RSS-Feed lautet: https://mialikescoffee.com/feed.xml
+
 ## Kontakt
 
-Ich freue mich, wenn ihr mir auf Twitter oder Mastodon folgt. Der Blog kann über einen Feedreader abonniert werden. Die URL für Feedreader lautet: https://mialikescoffee.com/feed.xml
-
 E-Mail: [mail@mialikescoffee.com](mailto:mail@mialikescoffee.com)  
-Twitter: [@jln0x1](https://twitter.com/jln0x1)   
 Mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)
+Twitter: [@jln0x1](https://twitter.com/jln0x1)   
+
+<a rel="me" href="https://social.tchncs.de/@mialikescoffee"></a>
