@@ -67,12 +67,15 @@ author:
     - label: "Mastodon"
       icon: "fab fa-mastodon"
       url: "https://social.tchncs.de/@mialikescoffee"
+    - label: "E-Mail"
+      icon: "fas fa-at"
+      url: "mailto:mail@mialikescoffee.com"     
       
 social: 
   type: Person
-  name: Julian (mialikescoffee.com)
+  name: Julian
   links:
-    - "https://twitter.com/jln0x1"
+    - "https://social.tchncs.de/@mialikescoffee"
     
     
   
