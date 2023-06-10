@@ -61,15 +61,12 @@ author:
   avatar : "/assets/images/biopic.png"
   bio    : "Willkommen auf meinem Blog. Hier schreibe ich über Security, Privacy, CTFs (capture the flag) und andere IT-Themen."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://mialikescoffee.com"
-    - label: "Mastodon"
-      icon: "fab fa-mastodon"
-      url: "https://social.tchncs.de/@mialikescoffee"
     - label: "E-Mail"
       icon: "fas fa-at"
-      url: "mailto:mail@mialikescoffee.com"     
+      url: "mailto:mail@mialikescoffee.com" 
+    - label: "Mastodon"
+      icon: "fab fa-mastodon"
+      url: "https://social.tchncs.de/@mialikescoffee"    
       
 social: 
   type: Person
