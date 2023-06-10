@@ -35,6 +35,5 @@ Der Blog kann über einen Feedreader abonniert werden. Die URL für den RSS-Feed
 
 E-Mail: [mail@mialikescoffee.com](mailto:mail@mialikescoffee.com)  
 Mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)  
-Twitter: [@jln0x1](https://twitter.com/jln0x1)   
 
 <a rel="me" href="https://social.tchncs.de/@mialikescoffee"></a>
