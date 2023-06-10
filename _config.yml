@@ -64,12 +64,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://mialikescoffee.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jln0x1"
     - label: "Mastodon"
       icon: "fab fa-mastodon"
-      url: "https://social.tchncs.de/web/@mialikescoffee"
+      url: "https://social.tchncs.de/@mialikescoffee"
       
 social: 
   type: Person
@@ -83,9 +80,9 @@ social:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jln0x1"
+    - label: "Mastodon"
+      icon: "fab fa-mastodon"
+      url: "https://social.tchncs.de/@mialikescoffee"
     - label: "Email"
       icon: "fas fa-at"
       url: "mailto:mail@mialikescoffee.com"
