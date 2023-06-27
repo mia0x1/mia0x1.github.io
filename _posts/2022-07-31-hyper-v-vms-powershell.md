@@ -67,4 +67,4 @@ Anschließend startet der Installationsprozess für Windows Server 2022.
 
 ![ws2022-setup.png]({{site.baseurl}}/images/ws2022-setup.png)
 
-Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder auf Twitter bzw. Mastodon.
+Wenn ihr zu dem Thema Fragen oder Anregungen habt, kontaktiert mich gerne per E-Mail oder über [Mastodon](https://social.tchncs.de/@mialikescoffee).

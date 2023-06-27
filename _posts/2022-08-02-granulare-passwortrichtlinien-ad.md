@@ -45,4 +45,4 @@ Im Password Settings Container klickt man auf der rechten Fensterseite auf neu, 
 
 - **Direkt anwendbar auf**: Hier wird die Sicherheitsgruppe festgelegt, für welche die Richtlinie gelten soll
 
-Best Practices für Passwörter werden in [diesem Artikel](https://www.netwrix.com/password_best_practice.html) vorgestellt. War mein Artikel hilfreich oder habt ihr Fragen oder Anregungen dazu, schreib mir gerne bei [Twitter](https://twitter.com/jln0x1) oder eine E-Mail.
+Best Practices für Passwörter werden in [diesem Artikel](https://www.netwrix.com/password_best_practice.html) vorgestellt. War mein Artikel hilfreich oder habt ihr Fragen oder Anregungen dazu, schreib mir gerne bei [Mastodon](https://social.tchncs.de/@mialikescoffee) oder eine E-Mail.
