@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+_posts/*entwurf*
+_posts/*Entwurf*
+_posts/vorlage.md
