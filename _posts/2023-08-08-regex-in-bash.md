@@ -8,7 +8,7 @@ tags:
 title: RegEx in if-Anweisungen - Effektive Mustererkennung in Bash
 ---
 
-Reguläre Ausdrücke oft als RegEx abgekürzt (Regular Expressions) sind speizelle Zeichenfolgen zur Mustererkennung. In Kombination mit Bash bilden sie ein äußerst leistungsfähiges Werkzeug. Das Wissen darüber ist besonders für Administratoren, die in Linux oder anderen unixoiden Systemen mit Bash arbeiten, äußerst nützlich, um Probleme zu lösen.
+Reguläre Ausdrücke, oft als RegEx abgekürzt (Regular Expressions), sind spezielle Zeichenfolgen zur Mustererkennung. In Kombination mit Bash bilden sie ein äußerst leistungsfähiges Werkzeug. Das Wissen darüber ist besonders für Administratoren, die in Linux oder anderen unixoiden Systemen mit Bash arbeiten, äußerst nützlich, um Probleme zu lösen.
 
 ![Bash Logo]({{site.baseurl}}/images/bash_logo.png)
 
