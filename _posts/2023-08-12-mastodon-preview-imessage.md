@@ -5,6 +5,10 @@ tags:
   - apple
   - macos
   - opensource
+header:
+  image: /images/header/mastodon.webp
+  teaser: /images/header/mastodon.webp
+  image_description: Ein iPhone liegt auf einem Tisch. Danaben steht ein Mastodon.
 title: Rich Preview von Mastodon Posts in iMessage
 ---
 
@@ -17,8 +21,8 @@ Seit der Einführung von iOS 16.4 bietet iMessage die Funktion "Rich Preview" f�
 Obwohl das Feature jetzt schon seit einigen Monaten Bestandteil von iOS und macOS ist, finde ich es nach wie vor äußerst faszinierend. Apple trägt dazu bei Mastodon aus seiner ursprünglichen Nische herauszuheben und das dezentrale Netzwerk als vollwertiges soziales Medium anzuerkennen. Ich finde, Apple hat hier einen sehr guten Job gemacht.
 
 
-![Screenshot einer Mastodon Vorschau in iMessage]({{site.baseurl}}/images/mastodon_preview1.png)
+![Screenshot einer Mastodon Vorschau in iMessage]({{site.baseurl}}/images/mastodon_preview1.jpeg)
 
 Ich hoffe, dass dieses Feature einen positiven Einfluss darauf hat, wie Menschen Mastodon nutzen und Inhalte aus dem Netzwerk miteinander teilen. Andere Messenger, wie Signal, könnten sich ruhig daran orientieren und eine ähnliche gestaltete Vorschau für Inhalte von Mastodon anbieten. Dies würde nicht nur die Benutzerfreundlichkeit verbessern, sondern auch die Sichtbarkeit und Akzeptanz von dezentralen sozialen Plattformen fördern.
 
-![Screenshot einer Mastodon Vorschau in iMessage]({{site.baseurl}}/images/mastodon_preview2.png)
+![Screenshot einer Mastodon Vorschau in iMessage]({{site.baseurl}}/images/mastodon_preview2.jpeg)

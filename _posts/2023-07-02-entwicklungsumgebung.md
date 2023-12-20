@@ -4,6 +4,10 @@ description: Um einen ordentlichen Workflow bei der Erstellung von Blogposts und
 tags:
   - selfhosting
   - linux
+header:
+  image: /images/header/entwicklungsumgebung.webp
+  teaser: /images/header/entwicklungsumgebung.webp
+  image_description: Eine Person sitzt vor einem großen Bildschirm und schaut auf eine Linux CLI
 title: Entwicklungsumgebung zum Bloggen
 ---
 
