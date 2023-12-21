@@ -5,6 +5,10 @@ tags:
   - linux
   - opensource
   - macos
+header:
+  image: /images/header/regex.webp
+  teaser: /images/header/regex.webp
+  image_description: Ein Entwickler sitzt vor einem Laptop und schreibt Code. Im Hintergrund sieht man den Nachthimmel aus dem Fenster.
 title: RegEx in if-Anweisungen - Effektive Mustererkennung in Bash
 ---
 

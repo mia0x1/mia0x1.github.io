@@ -5,6 +5,10 @@ tags:
   - security
   - linux
   - ctf
+header:
+  image: /images/header/overpass.webp
+  teaser: /images/header/overpass.webp
+  image_description: Eine Hackerin sitzt auf dem Sofa vor ihrem Laptop und löst das Overpass CTF. Im Hintergrund sieht man die Stadt bei nacht durch das große Fenster.
 ---
 Ein writeup zum TryHackMe-Raum [Overpass](https://tryhackme.com/room/overpass)
 

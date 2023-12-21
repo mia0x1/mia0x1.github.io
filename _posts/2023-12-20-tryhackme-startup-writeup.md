@@ -7,7 +7,8 @@ tags:
   - linux
 title: TryHackMe Startup
 header:
- image: /images/startup.webp
+ teaser: /images/header/startup.webp
+ teaser: /images/header/startup.webp
  image_description: "Ein Screenshot der Wallabag-Artikelliste."
 ---
 
