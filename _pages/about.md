@@ -3,35 +3,35 @@ permalink: /about/
 title: "About"
 ---
 
-Hi. Ich heiße Julian und dies ist mein privater Blog, auf welchem ich über Themen schreibe, die ich spannend finde.
+Hi. My name is Julian and this is my personal blog where I write about topics that I find exciting.
 
-Dazu gehören:
+These include:
 
-* IT-Security
-* Privacy
+* IT security
+* privacy
 * CTFs (capture the flag)
-* Und weitere IT-bezogene Themen
+* and other IT-related topics
 
 
-### Warum mialikescoffee.com ?
+### Why mialikescoffee.com ?
 
-Der Name bezieht sich auf **Mia Wallace** aus dem Tarantino Film Pulp Fiction aus dem Jahr 1994. 
+The name refers to the character **Mia Wallace** from the Tarantino movie Pulp Fiction from 1994.
 
-Außerdem trinke ich gerne Kaffee (vor allem beim Schreiben von Artikeln und Recherchen) und beschäftige mich mit den verschiedensten Zubereitungsarten (derzeit am liebsten Filterkaffee aus dem Hario V60).
+I also enjoy drinking coffee (especially when writing articles and researching) and am interested in various ways of making it (currently my favorite is filter coffee from the Hario V60).
   
-![Eine Tasse Kaffee, die neben einem Laptop steht.]({{ site.baseurl }}/images/coffeelaptop.jpg)  
+![A cup of coffee standing next to a laptop.]({{ site.baseurl }}/images/coffeelaptop.jpg)  
   
   
-## Über den Blog
+## About the Blog
 
-Der Blog wird mit [Jekyll](https://jekyllrb.com/) auf GitHub Pages gehostet. Das Theme ist [Minimal-Mistakes](https://mmistakes.github.io/minimal-mistakes/).
+The blog is hosted with [Jekyll](https://jekyllrb.com/) on GitHub Pages. The theme I am using is [Minimal-Mistakes](https://mmistakes.github.io/minimal-mistakes/).
 
-Das Favicon stammt von [Flaticon](https://www.flaticon.com/free-icons/coffee).
-Das Terminal-Logo im Header stammt ebenfalls von [Flaticon](https://www.flaticon.com/free-icon/terminal_7544562).
+The favicon is from [Flaticon](https://www.flaticon.com/free-icons/coffee).
+The terminal logo in the header is also from [Flaticon](https://www.flaticon.com/free-icon/terminal_7544562).
 
-Der Blog kann über einen Feedreader abonniert werden. Die URL für den RSS-Feed lautet: https://mialikescoffee.com/feed.xml
+The blog can be subscribed via a feed reader. The URL for the RSS feed is: https://mialikescoffee.com/feed.xml
 
-## Kontakt
+## Contact
 
-E-Mail: [mail@mialikescoffee.com](mailto:mail@mialikescoffee.com)  
-Mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)
+email: [mail@mialikescoffee.com](mailto:mail@mialikescoffee.com)  
+mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)

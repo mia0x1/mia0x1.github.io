@@ -16,8 +16,7 @@
 title: mialikescoffee.com
 email: mail@mialikescoffee.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ein Blog über IT, Security und Privacy. Powered by coffee.
-twitter_username: jln0x1
+  A blog about IT and security. Powered by coffee.
 minimal_mistakes_skin: contrast
 search: true
 
@@ -29,7 +28,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Europe/Berlin
-locale: de_DE
+locale: en_US
 logo: "/images/logo_terminal.png"
 
 include:
@@ -59,12 +58,12 @@ plugins:
 author:
   name   : "Julian"
   avatar : "/assets/images/biopic.png"
-  bio    : "Willkommen auf meinem Blog. Hier schreibe ich über Security, Privacy, CTFs (capture the flag) und andere IT-Themen."
+  bio    : "Welcome to my blog. Here I write about IT and security stuff. Grab a cup of coffee and enjoy reading."
   links:
-    - label: "E-Mail"
+    - label: "email"
       icon: "fas fa-at"
       url: "mailto:mail@mialikescoffee.com" 
-    - label: "Mastodon"
+    - label: "mastodon"
       icon: "fab fa-mastodon"
       url: "https://social.tchncs.de/@mialikescoffee"    
       
