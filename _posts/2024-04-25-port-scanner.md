@@ -10,10 +10,10 @@ title: A TCP Port Scanner Written in Bash
 
 With a cup of coffee in hand, I settled in front of my laptop, opened my IDE, and wrote a simple TCP port scanner in Bash.
 You can find it on [GitHub](https://github.com/mia0x1/portscan).
-Of course you can use the script for troubleshooting purposes or learning **only in your own environment**, for example, to verify firewall changes. Feel free test it and add more useful functions.
+Of course you can use the script for troubleshooting purposes or learning **only in your own environment**, for example, to verify firewall changes. Feel free to test it and add more useful functions.
 
 Per default, it scans the well-known port range from 1 to 1023.
-One can specify their own port range by telling the script the first and last port. For example to scan for all ports from 80 to 445 you would use it like this:
+One can specify their own port range by telling the script the first and last port. For example to scan for all ports from 21 to 100 you would use it like this:
 
 ```sh
 ./portscan.sh 10.0.0.1 21 100
