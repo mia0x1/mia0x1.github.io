@@ -2,10 +2,13 @@
 published: true
 description: Discover how to set up and manage an httpd container using Podman on Debian without requiring root privileges. This post provides step-by-step instructions on running containers in a rootless context, enhancing your system's security and leveraging systemd for persistent container management.
 tags:
-  - Linux
-  - Bash
-  - Security
+  - linux
+  - bash
+  - security
 title: How To Deploy a Rootless httpd Container with Podman
+header:
+ image: /images/header/container.webp
+ teaser: /images/header/container.webp
 ---
 
 In this blog post, we'll explore how to set up and run an httpd server (Apache HTTP Server) using a containerized environment with Podman. A key aspect of this setup is running the container in a rootless context, which significantly reduces the risk of system-wide security vulnerabilites. By eliminating the need for root privileges, this method minimizes the potential impact of exploits and enhances the overall security posture of our server. 

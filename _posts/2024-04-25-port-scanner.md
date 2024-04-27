@@ -2,10 +2,13 @@
 published: true
 description: A simple TCP port scanner written in Bash.
 tags:
-  - Linux
-  - Security
-  - Bash
+  - linux
+  - security
+  - bash
 title: A TCP Port Scanner Written in Bash
+header:
+ image: /images/header/bash.webp
+ teaser: /images/header/bash.webp
 ---
 
 With a cup of coffee in hand, I settled in front of my laptop, opened my IDE, and wrote a simple TCP port scanner in Bash.
