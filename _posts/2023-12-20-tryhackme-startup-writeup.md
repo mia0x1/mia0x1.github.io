@@ -51,7 +51,7 @@ If we enumerate the web server for directories, we find the directory /files. Ve
 
 So, it's relatively obvious to gain initial access by loading a reverse shell via FTP onto the server and then accessing it through the browser to execute the shell server-side and connect it to our listener.
 
-We log in to the FTP server with anonymous / anonymous and navigate to the ftp folder. There, we can upload our reverse shell. You can use a PHP reverse shell, which you can find, for example, at [Pentest Monkey](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)findet.
+We log in to the FTP server with anonymous / anonymous and navigate to the ftp folder. There, we can upload our reverse shell. You can use a PHP reverse shell, which you can find, for example, at [Pentest Monkey](https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet).
 
 ![]({{site.baseurl}}/images/startup05.png)  
 
