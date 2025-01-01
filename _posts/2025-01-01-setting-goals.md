@@ -1,6 +1,6 @@
 ---
 published: true
-description: Di
+description: If you want to achieve your goals, you need to write them down. Here's why.
 title: Write It Down - The Simple Trick to Achieving Goals in 2025 (and at any other time)
 header:
  image: /images/header/header_goals.jpg
