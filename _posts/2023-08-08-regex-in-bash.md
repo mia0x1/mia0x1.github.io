@@ -1,62 +1,62 @@
 ---
 published: true
-description: Reguläre Ausdrücke (RegEx) sind mächtige Mustererkennungswerkzeuge in Bash. Entdecke, wie sie in if-Abfragen genutzt werden, um Muster abzugleichen und Probleme zu lösen, wie z.B. Validierung von Benutzereingaben und Extraktion von Textelementen.
-tags:
+description: Regular expressions (RegEx) are powerful pattern matching tools in Bash. Discover how they are used in if queries to match patterns and solve problems such as validating user input and extracting text elements.
   - linux
   - opensource
   - macos
 header:
   image: /images/header/regex.webp
   teaser: /images/header/regex.webp
-  image_description: Ein Entwickler sitzt vor einem Laptop und schreibt Code. Im Hintergrund sieht man den Nachthimmel aus dem Fenster.
-title: RegEx in if-Anweisungen - Effektive Mustererkennung in Bash
+  image_description: A developer sits in front of a laptop and writes code. In the background, you can see the night sky from the window.
+title: RegEx in if statements - Effective pattern recognition in Bash
 ---
 
-Reguläre Ausdrücke, oft als RegEx abgekürzt (Regular Expressions), sind spezielle Zeichenfolgen zur Mustererkennung. In Kombination mit Bash bilden sie ein äußerst leistungsfähiges Werkzeug. Das Wissen darüber ist besonders für Administratoren, die in Linux oder anderen unixoiden Systemen mit Bash arbeiten, äußerst nützlich, um Probleme zu lösen.
+Regular expressions, often abbreviated as RegEx, are specialized strings used for pattern matching. When combined with Bash, they form an extremely powerful tool. Knowledge of this is particularly useful for administrators working with Bash in Linux or other Unix-like systems to solve problems efficiently.
 
 ![Bash Logo]({{site.baseurl}}/images/bash_logo.png)
 
-Besonders in if-Abfragen erweisen sich reguläre Ausdrücke als äußerst hilfreich. Sie können beispielsweise zur Validierung von Benutzereingaben oder zur Extraktion und anschließenden Bearbeitung bestimmter Elemente aus einem Text genutzt werden.
+Regular expressions are especially helpful in if statements. For instance, they can be used to validate user input or extract and process specific elements from a text.
 
 ## Syntax
 
-Um RegEx in einer if-Abfrage zu verwenden, muss man den Operator '=~' verwenden. 
-Damit lässt sich ein String mit einem regulären Ausdruck abgleichen.
+To use RegEx in an if statement, the =~ operator is required.
+This allows a string to be matched against a regular expression.
 
 ```bash
 if [[ "$input" =~ regex ]]; then
-  # Anweisung, wenn $input dem regulären Ausdruck entspricht.
+  # Command to execute if $input matches the regular expression.
 else
-  # Anweisung, wenn $input nicht dem regulären Ausdruck entspricht.
+  # Command to execute if $input does not match the regular expression.
 fi
 ```
-Diese If-Anweisung prüft den Inhalt der Variable '$input' gegen ein hier nicht näher definierten regulären Ausdruck. 
+This if statement checks the content of the variable $input against a regular expression (not further defined here).
 
-Zur Veranschaulichung habe ich einige konkrete Anwendungsbeispiele:
+Here are some concrete examples for illustration:
 
-## Prüfen, ob $input einer Zahl entspricht
+## Checking if $input is a number
 
-Im folgenden Beispiel wird in der if-Anweisung geprüft, ob der Inhalt von '$input' einer ganzen Zahl entspricht.
+In the following example, the if statement checks whether the content of $input is a whole number.
 
 ```bash
 if [[ "$input" =~ ^[0-9]+$ ]]; then
-  # Anweisung, wenn $input eine ganze Zahl ist.
+  # Command to execute if $input is a whole number.
 else
-  # Anweisung, wenn $input keine ganze Zahl ist.
+  # Command to execute if $input is not a whole number.
 fi
 ```
 
-## Prüfen, ob $input aus Buchstaben besteht
+## Checking if $input consists of letters
 
-Mit diesem regulären Ausdrück kann geprüft werden, ob der Inhalt von '$input' ausschließlich aus Klein- und Großbuchstaben besteht.
+With this regular expression, you can check if the content of $input consists exclusively of uppercase and lowercase letters.
 
 ```bash
 if [[ "$input" =~ ^[A-Za-z]+$ ]]; then
-  # Anweisung, wenn $input aus Klein- und Großbuchstaben besteht.
+  # Command to execute if $input consists of uppercase and lowercase letters.
 else
-  # Anweisung, wenn $input nicht aus Klein- und Großbuchstaben besteht.
+  # Command to execute if $input does not consist of uppercase and lowercase letters.
 fi
 ```
 
-Die beiden Beispiele sind vergleichsweise einfache Anwendungen von regulären Ausdrücken.
-Diese können jedoch rasch komplexer werden. Für die Erstellung eigener regulärer Ausdrücke finde ich die Webseite [regex101.com](https://regex101.com/) äußerst hilfreich. Neben einer umfassenden Dokumentation bietet sie auch die Möglichkeit, eigene reguläre Ausdrücke mit eigenen Eingaben zu testen und zu überprüfen.
+These two examples represent relatively simple applications of regular expressions. However, they can quickly become more complex. For creating your own regular expressions, I find the website [regex101.com](https://regex101.com/) particularly helpful. In addition to comprehensive documentation, it also provides the ability to test and verify your own regular expressions with custom inputs.
+Have you ever used RegEx in if statements before? If so, feel free to share your experiences with me. :)
+

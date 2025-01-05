@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Julian"
   avatar : "/assets/images/biopic.png"
-  bio    : "Welcome to my blog. Here I write about IT and security stuff. Grab a cup of coffee and enjoy reading."
+  bio    : "Welcome to my blog. Here I write about IT, security and things that inspire me. Grab a cup of coffee and enjoy reading."
   links:
     - label: "email"
       icon: "fas fa-at"

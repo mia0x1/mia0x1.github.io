@@ -1,5 +1,9 @@
 ---
 title: Hello World 2.0 - A New Beginning?
+header:
+ image: /images/header/header_hello.jpeg
+ teaser: /images/header/header_hello.jpeg
+ image_description: An iPhone is lying on a table. The display shows hello.
 ---
 
 Not really, just a small pivot in this blog.

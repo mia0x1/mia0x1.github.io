@@ -1,6 +1,6 @@
 ---
 published: true
-description: Seit iOS 16.4 gibt es die "Rich Preview" Funktion für Mastodon Posts, die in iMessage Details wie Autor, Inhalt des Posts und Bilder darstellt.
+description: Since iOS 16.4, there is the “Rich Preview” function for Mastodon posts, which displays details such as author, content of the post and images in iMessage.
 tags:
   - apple
   - macos
@@ -8,21 +8,21 @@ tags:
 header:
   image: /images/header/mastodon.webp
   teaser: /images/header/mastodon.webp
-  image_description: Ein iPhone liegt auf einem Tisch. Danaben steht ein Mastodon.
+  image_description: An iPhone is lying on a table. Next to it is a mastodon.
 title: Rich Preview von Mastodon Posts in iMessage
 ---
 
-Seit der Einführung von iOS 16.4 bietet iMessage die Funktion "Rich Preview" für Inhalte, welche auf Mastodon gepostet wurden. Konkret bedeutet das, dass iMessage Details zu einem Post abruft, wie den Text, den Account des Autors und Bilder und diese dann in der Konversation darstellt.
+Since the release of iOS 16.4, iMessage has introduced the “Rich Preview” feature for content posted on Mastodon. Specifically, this means that iMessage retrieves details about a post, such as the text, the author’s account, and images, and displays them within the conversation.
 
 {:refdef: style="text-align: center;"}
 [![Mastodon Logo]({{site.baseurl}}/images/mastodon_banner.svg)](https://joinmastodon.org/)
 {: refdef}
 
-Obwohl das Feature jetzt schon seit einigen Monaten Bestandteil von iOS und macOS ist, finde ich es nach wie vor äußerst faszinierend. Apple trägt dazu bei Mastodon aus seiner ursprünglichen Nische herauszuheben und das dezentrale Netzwerk als vollwertiges soziales Medium anzuerkennen. Ich finde, Apple hat hier einen sehr guten Job gemacht.
+Although this feature has been part of iOS and macOS for several months now, I still find it absolutely fascinating. Apple is helping to bring Mastodon out of its original niche and recognize the decentralized network as a fully-fledged social medium. I think Apple has done an excellent job here.
 
 
-![Screenshot einer Mastodon Vorschau in iMessage]({{site.baseurl}}/images/mastodon_preview1.jpeg)
+![Screenshot of a Mastodon preview in iMessage]({{site.baseurl}}/images/mastodon_preview1.jpeg)
 
-Ich hoffe, dass dieses Feature einen positiven Einfluss darauf hat, wie Menschen Mastodon nutzen und Inhalte aus dem Netzwerk miteinander teilen. Andere Messenger, wie Signal, könnten sich ruhig daran orientieren und eine ähnliche gestaltete Vorschau für Inhalte von Mastodon anbieten. Dies würde nicht nur die Benutzerfreundlichkeit verbessern, sondern auch die Sichtbarkeit und Akzeptanz von dezentralen sozialen Plattformen fördern.
+I hope this feature has a positive impact on how people use Mastodon and share content from the network with one another. Other messengers, like Signal, could take inspiration from this and offer similarly designed previews for Mastodon content. This would not only improve usability but also promote the visibility and acceptance of decentralized social platforms.
 
-![Screenshot einer Mastodon Vorschau in iMessage]({{site.baseurl}}/images/mastodon_preview2.jpeg)
+![Screenshot of a Mastodon preview in iMessage]({{site.baseurl}}/images/mastodon_preview2.jpeg)
