@@ -40,4 +40,5 @@ The blog can be subscribed via a feed reader. The URL for the RSS feed is: https
 ## Contact
 
 email: [mail@mialikescoffee.com](mailto:mail@mialikescoffee.com)  
-mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)
+mastodon: [@mialikescoffee@social.tchncs.de](https://social.tchncs.de/@mialikescoffee)  
+bluesky: [@jul1an.bsky.social](https://bsky.app/profile/jul1an.bsky.social)

@@ -60,12 +60,12 @@ author:
   avatar : "/assets/images/biopic.png"
   bio    : "Welcome to my blog. Here I write about IT, security and things that inspire me. Grab a cup of coffee and enjoy reading."
   links:
-    - label: "email"
-      icon: "fas fa-at"
-      url: "mailto:mail@mialikescoffee.com" 
     - label: "mastodon"
       icon: "fab fa-mastodon"
-      url: "https://social.tchncs.de/@mialikescoffee"    
+      url: "https://social.tchncs.de/@mialikescoffee"
+    - label: "bluesky"
+      icon: "fab fa-bluesky"
+      url: "https://bsky.app/profile/jul1an.bsky.social"    
       
 social: 
   type: Person
@@ -73,15 +73,15 @@ social:
   links:
     - "https://social.tchncs.de/@mialikescoffee"
     
-    
-  
-   
 
 footer:
   links:
     - label: "Mastodon"
       icon: "fab fa-mastodon"
       url: "https://social.tchncs.de/@mialikescoffee"
+    - label: "Bluesky"
+      icon: "fab fa-bluesky"
+      url: "https://bsky.app/profile/jul1an.bsky.social"
     - label: "Email"
       icon: "fas fa-at"
       url: "mailto:mail@mialikescoffee.com"

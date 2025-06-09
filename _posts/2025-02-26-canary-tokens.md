@@ -1,6 +1,8 @@
 ---
 published: true
 description: Deception technology plays a crucial role in modern cybersecurity by helping organizations detect and respond to threats more effectively. With Canarytokens, anyone can easily implement deception techniques to enhance their network security.
+tags:
+  - security
 title: Catching Attackers with Deception - A Hands-On Guide to Canarytokens
 header:
  image: /images/header/header_laptop.jpg
