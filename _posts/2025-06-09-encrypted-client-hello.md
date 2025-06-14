@@ -7,7 +7,7 @@ tags:
 title: ECH - The Missing Layer in DNS Privacy
 header:
  image: /images/header/header_privacy.jpg
- teaser: /images/header/header_privacyjpg
+ teaser: /images/header/header_privacy.jpg
 ---
 
 This week, there was a discussion on [Hacker News](https://news.ycombinator.com/item?id=44215608) about the reasons for and against using DNS over HTTPS (DoH). **DNS over HTTPS (DoH)** and **DNS over TLS (DoT)** are protocols designed to encrypt DNS traffic. 
